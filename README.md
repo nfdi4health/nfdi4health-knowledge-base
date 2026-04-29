@@ -25,7 +25,7 @@ To get involved, please refer to:
 * Contribution Guidelines
 
 For questions or coordination, please contact the editorial team at:
-[nfdi4health-training@yourdomain.org](mailto:nfdi4health-training@yourdomain.org)
+[NFDI4Health HelpDesk](mailto:nfdi4health-training@yourdomain.org)
 
 If you would like to work with the repository locally, please consult the Git and contribution guidelines provided in this repository.
 

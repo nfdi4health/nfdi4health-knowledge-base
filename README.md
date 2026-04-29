@@ -2,9 +2,6 @@
 
 <img src="assets/img/section-icons/nfdi4health-logo.svg" alt="NFDI4Health logo" width="450"/>
 
-
-
-# NFDI4Health Knowledge Base
 # NFDI4Health Knowledge Base
 
 The NFDI4Health Knowledge Base is a modular platform designed to support training and guidance across the entire research data lifecycle in the health domain. It serves as both a self-learning resource and the foundation for structured training activities, including synchronous courses and summer schools.

@@ -1,0 +1,87 @@
+name: Update registries and services links
+on:
+  schedule:
+    - cron:  '0 13 * * 1'
+  workflow_dispatch:
+
+jobs:
+  registry-lookup:
+    if: |
+        github.repository_owner == 'elixir-europe'
+  
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: [3.13]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install ruamel.yaml requests python-frontmatter
+
+      - name: Run script for creating or updating FAIRsharing collections
+        run: | 
+          python var/fairsharing_integration.py --username ${{ secrets.FAIRSHARING_USERNAME }} --password "${{ secrets.FAIRSHARING_PASSWORD }}"
+
+      - name: Run regsitry lookup for the tools file
+        run: | 
+          python var/tools_validator.py --reg --username ${{ secrets.FAIRSHARING_USERNAME }} --password "${{ secrets.FAIRSHARING_PASSWORD }}"
+
+      - name: Update markdown pages with DSW links
+        run: |
+          python var/dsw_integration.py
+
+      - name: Get faircookbook-rdmkit repository
+        uses: actions/checkout@v3
+        with:
+          repository: elixir-europe/faircookbook-rdmkit
+          path: faircookbook-rdmkit
+          ref: main
+
+      - name: Update markdown pages with FAIR Cookbook links
+        run: |
+          python var/faircookbook_integration.py ${GITHUB_WORKSPACE}/faircookbook-rdmkit/faircookbook_rdmkit_mapping.yml
+
+      - name: Deleting faircookbook-rdmkit repository
+        run: |
+          rm -r faircookbook-rdmkit
+
+      - name: Show differences
+        run: |
+          git diff --stat
+
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Update tools table and page metadata
+          title: 'Automatic updating of the tools table and page metadata'
+          body: |
+            This PR is automatically generated based on changes in the tool_and_resource_list.yml file or updates in the page metadata. The updates are generated using the API of following registries/services:
+              - DSW
+              - FAIRsharing
+              - Bio.tools
+              - TeSS
+              - FAIR Cookbook
+
+            Please verify if these changes are valid.
+          labels: |
+            automatic PR
+          reviewers: bedroesb
+          branch: registry-updates
+          base: master
+
+      - name: Check output
+        run: |
+          echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"

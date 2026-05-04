@@ -2,7 +2,7 @@
 title: About
 ---
 
-## Who is the RDMkit for?
+## Who is the NFDI4Health for?
 The ELIXIR Research Data Management Kit (RDMkit) has been designed to guide life scientists in their efforts to better manage their research data following the FAIR Principles. It is based on the various steps of the data lifecycle, although not all the steps will be relevant to everyone.
 
 The contents are generated and maintained by the ELIXIR community. More information on how we want to sustain and govern RDMkit can be found on the [RDMkit Alliance page](rdmkit_alliance).

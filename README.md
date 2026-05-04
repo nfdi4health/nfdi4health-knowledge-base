@@ -41,7 +41,7 @@ The initiative provides a range of services such as the Health Study Hub, Local 
 
 ## License
 
-Unless otherwise stated, the content of this Knowledge Base is made available under a CC-BY 4.0 license. The underlying software and technical components are provided under an MIT license this is inlined with the NFDI4Health Publication policy
+Unless otherwise stated, the content of this Knowledge Base is made available under a CC-BY 4.0 license. The underlying software and technical components are provided under an MIT license. This is inlined with the NFDI4Health [Publication policy](https://zenodo.org/records/6257742)
 
 This Knowledge Base is adapted from RDMkit (ELIXIR Europe), and appropriate attribution is maintained in accordance with the original licensing terms.
 

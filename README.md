@@ -49,7 +49,7 @@ This Knowledge Base is adapted from RDMkit (ELIXIR Europe), and appropriate attr
 
 ## Acknowledgements
 
-This work builds upon the structure and concepts of RDMkit, developed by ELIXIR Europe. We acknowledge their contribution to advancing research data management practices.
+This work builds upon the structure and concepts of [RDMkit](https://rdmkit.elixir-europe.org/), developed by ELIXIR Europe. We acknowledge their contribution to advancing research data management practices.
 
 NFDI4Health is funded within the framework of the National Research Data Infrastructure (NFDI) initiative in Germany and supported by participating institutions and partners.
 

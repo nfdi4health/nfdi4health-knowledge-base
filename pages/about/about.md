@@ -1,11 +1,11 @@
 ---
-title: About
+title: About us and the knowledge base
 ---
 
-## Who is the NFDI4Health for?
-The ELIXIR Research Data Management Kit (RDMkit) has been designed to guide life scientists in their efforts to better manage their research data following the FAIR Principles. It is based on the various steps of the data lifecycle, although not all the steps will be relevant to everyone.
+## Who is the NFDI4Health Knowledgebase for?
+The  NFDI4Health Knowledgebase (NFDI4Health_KB) has been designed to guide biomedical resarchers in their efforts to better manage their research data following the FAIR Principles. It is based on the various steps of the data lifecycle, although not all the steps will be relevant to everyone.
 
-The contents are generated and maintained by the ELIXIR community. More information on how we want to sustain and govern RDMkit can be found on the [RDMkit Alliance page](rdmkit_alliance).
+The contents are generated and maintained by the NFDI4Health and other biomedical community. More information the NFDI4Health can be found in  [NFDI4Health](https://www.nfdi4health.de/en/).
 
 <div class="card bg-light my-4">
   <div class="card-body">

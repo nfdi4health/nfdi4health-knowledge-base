@@ -12,8 +12,8 @@ layout: none
     <div class="landingpage">
         <section class="container g-lg-5 mb-5">
             <div>
-                <h1>The Research Data Management toolkit for Life Sciences</h1>
-                <p class="text-center mt-2">Best practices and guidelines to help you make your data FAIR (Findable, Accessible, Interoperable and Reusable)</p>
+                <h1>NFDI4Health Knowledge Base</h1>
+                <p class="text-center mt-2">Practical guidance for managing, documenting, sharing, and reusing personal health research data.</p>
             </div>
         </section>
         <section id="search-section" class="bg-light py-5">
@@ -35,7 +35,7 @@ layout: none
         </section>
         <section class="bg-light pb-5">
             <div class="container g-lg-5">
-                <h2 class="no-anchor text-center mb-3">Browse all topics by</h2>
+                <h2 class="no-anchor text-center mb-3">Browse the knowledge Base by</h2>
                 {%- assign sidebar = site.data.sidebars[page.sidebar] %}
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
                     {%- for folder in sidebar.subitems %}
@@ -57,7 +57,7 @@ layout: none
         </section>
         <section class="py-5">
             <div class="container g-lg-5">
-                <h2 class="no-anchor text-center mb-4">Research Data Management at glance</h2>
+                <h2 class="no-anchor text-center mb-4">Research Data Management in Biomedical/ NFDI4Health context</h2>
                 <div class="d-flex">
                     <div class="ratio ratio-16x9 mx-auto" style="max-width: 600px;">
                         <iframe class="rounded" src="https://www.youtube.com/embed/S7HfUe1hWcg?si=IepMXby7ei3UxenW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -73,9 +73,9 @@ layout: none
                     </div>
                     <div class="col-lg-7">
                         <h2>We welcome contributors!</h2>
-                        <p>This project would not be possible without the many <a href="{{ '/contributors' | relative_url }}"><b>amazing
-                            community contributors</b></a>. RDMkit is an open community project, and you are welcome to join us!
-                        </p>
+                        <p>The NFDI4Health Knowledge Base is collaboratively maintained by data stewards, service owners, trainers, and community experts. Contributions help keep the guidance accurate, practical, and 
+                            responsive to community needs.
+                         </p>
                     </div>
                     <div class="col-lg-3 my-auto">
                         <a class="btn btn-primary btn-lg rounded-pill px-4" href="{{ '/how_to_contribute' | relative_url }}">Start contributing</a>
@@ -97,7 +97,7 @@ layout: none
         </section>
         <section class="py-5 bg-light">
             <div class="container g-lg-5">
-                <h2 class="mb-3">RDMkit in numbers</h2>
+                <h2 class="mb-3">Knowledge Base in numbers</h2>
                 {%- assign contributors = site.data.CONTRIBUTORS %}
                 {%- for page in site.pages %}
                 {%- if page.contributors and page.search_exclude != true %}
@@ -121,7 +121,7 @@ layout: none
                                 <div class="col-7">
                                     <span class="count-number text-primary">{{allcontributors.size}}</span>
                                     <p><b>Contributors</b><br>
-                                        The force behind RDMkit</p>
+                                        The people behind the Knowledge Base</p>
                                 </div>
                                 <div class="col-5 my-auto">
                                     <img class="h-icon-6" src="{{ '/assets/img/section-icons/community.svg' | relative_url }}" alt="Contributors icon">

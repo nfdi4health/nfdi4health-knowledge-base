@@ -282,3 +282,30 @@ a:hover {
 .landingpage #search-label i {
   filter: hue-rotate(165deg) saturate(1.4);
 }
+/*----- Module cards -----*/
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.module-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: all 0.2s ease;
+}
+
+.module-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.module-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #00578c;
+}

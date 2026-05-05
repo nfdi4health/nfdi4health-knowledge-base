@@ -277,3 +277,8 @@ a:hover {
 .card:hover .card-title {
   color: #3498db !important;
 }
+/* Make homepage icons match NFDI4Health blue */
+.landingpage .card img,
+.landingpage #search-label i {
+  filter: hue-rotate(165deg) saturate(1.4);
+}

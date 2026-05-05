@@ -250,3 +250,30 @@ a.citation span {
 .bibliography { 
     margin-top: 2rem; 
 } 
+
+/*----- NFDI4Health color override -----*/
+
+:root {
+  --nfdi-blue: #00578c;
+  --nfdi-light-blue: #3498db;
+}
+
+.btn-primary,
+.bg-primary,
+.badge-primary {
+  background-color: #3498db !important;
+  border-color: #3498db !important;
+}
+
+a {
+  color: #00578c;
+}
+
+a:hover {
+  color: #3498db;
+}
+
+.card:hover h3,
+.card:hover .card-title {
+  color: #3498db !important;
+}

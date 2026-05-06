@@ -89,76 +89,7 @@ layout: none
             
         </section>
         <section class="py-5 bg-light">
-            <div class="container g-lg-5">
-                <h2 class="mb-3">Knowledge Base in numbers</h2>
-                {%- assign contributors = site.data.CONTRIBUTORS %}
-                {%- for page in site.pages %}
-                {%- if page.contributors and page.search_exclude != true %}
-                {%- assign pagecontr = page.contributors | join: ", " %}
-                {%- if allcontrstr %}
-                {%- assign allcontrstr = allcontrstr | append: ", " | append: pagecontr %}
-                {%- else %}
-                {%- assign allcontrstr = allcontrstr | append: pagecontr %}
-                {%- endif %}
-                {%- endif %}
-                {%- endfor %}
-                {%- for contr in contributors %}
-                {%- assign allcontrstr = allcontrstr | append: ", " | append: contr[0] %}
-                {%- endfor %}
-                {%- assign allcontributors = allcontrstr | split: ", " | uniq | sort %}
-                {%- assign tools = site.data.tool_and_resource_list -%}
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 mb-3">
-                    <div class="col">
-                        <div class="bg-white d-flex align-items-center rounded p-3 text-center h-100">
-                            <div class="row g-1 flex-grow-1">
-                                <div class="col-7">
-                                    <span class="count-number text-primary">{{allcontributors.size}}</span>
-                                    <p><b>Contributors</b><br>
-                                        The people behind the Knowledge Base</p>
-                                </div>
-                                <div class="col-5 my-auto">
-                                    <img class="h-icon-6" src="{{ '/assets/img/section-icons/community.svg' | relative_url }}" alt="Contributors icon">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="bg-white d-flex align-items-center rounded p-3 text-center h-100">
-                            {%- assign national_tools = 0 %}
-                            {%- assign country_pages = site.pages | where: "type", "national_resources" | where:
-                            "search_exclude", false %}
-                            {%- for country_page in country_pages %}
-                            {%- assign national_tools = national_tools | plus: country_page.national_resources.size %}
-                            {%- endfor %}
-                            <div class="row g-1 flex-grow-1">
-                                <div class="col-7">
-                                    <span class="count-number text-primary">{{tools.size | plus: national_tools }}</span>
-                                    <p><b>Tools & resources</b><br>
-                                        Explained in the context of real world problems</p>
-                                </div>
-                                <div class="col-5 my-auto">
-                                    <img class="h-icon-6" src="{{ '/assets/img/section-icons/cogs.svg' | relative_url }}" alt="Tools icon">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="bg-white d-flex align-items-center rounded p-3 text-center h-100">
-                            {%- assign content_pages = site.pages | where: "search_exclude", false %}
-                            <div class="row g-1 flex-grow-1">
-                                <div class="col-7">
-                                    <span class="count-number text-primary">{{content_pages.size}}</span>
-                                    <p><b>Pages</b><br>
-                                        Helping you with data management</p>
-                                </div>
-                                <div class="col-5 my-auto">
-                                    <img class="h-icon-6" src="{{ '/assets/img/section-icons/your-task.svg' | relative_url }}" alt="Pages icon">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </section>
     </div>
     {%- if site.theme_variables.back_to_top or site.theme_variables.back_to_top == nil %}

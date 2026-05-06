@@ -3,6 +3,7 @@ title: Module Catalogue
 description: Overview of NFDI4Health RDM Knowledge Base modules.
 permalink: /modules
 ---
+
 ## Modules
 
 <div class="module-grid">

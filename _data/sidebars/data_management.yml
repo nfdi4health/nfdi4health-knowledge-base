@@ -13,7 +13,7 @@ subitems:
 
   - title: NFDI4Health services
     description: Learn how NFDI4Health services support data discovery, access, documentation, quality, privacy, and analysis.
-    url: /tool_assembly
+    url: /services
     image_url: /assets/img/section-icons/tool-assembly.svg
 
   - title: How-to guides

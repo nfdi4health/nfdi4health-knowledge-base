@@ -1,7 +1,7 @@
 ---
 title: NFDI4Health Services
 description: Overview of NFDI4Health services supporting FAIR personal health data.
-permalink: /tool_assembly
+permalink: /services
 ---
 
 # NFDI4Health Services

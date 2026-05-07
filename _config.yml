@@ -1,7 +1,6 @@
-title: RDMkit
+title: NFDI4Health Knowledge Base
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
-
-description: "Best practices and guidelines you can use for FAIR management of your research data."
+description: "Practical guidance for managing, documenting, sharing, and reusing personal health research data in line with FAIR principles."
 # Metadata description of the website
 
 remote_theme: ELIXIR-Belgium/elixir-toolkit-theme
@@ -49,6 +48,8 @@ defaults:
       layout: "page"
       sidebar: data_management
       search_exclude: false
+      no_robots: true
+
   -
     scope:
       path: "pages/data_life_cycle/TEMPLATE_rdm_cycle.md"
@@ -57,6 +58,7 @@ defaults:
       sitemap: false
       search_exclude: true
       no_robots: true
+
   -
     scope:
       path: "pages/national_resources/TEMPLATE_resources.md"
@@ -65,6 +67,7 @@ defaults:
       sitemap: false
       search_exclude: true
       no_robots: true
+
   -
     scope:
       path: "pages/tool_assembly/TEMPLATE_tool_assembly.md"
@@ -73,6 +76,7 @@ defaults:
       sitemap: false
       search_exclude: true
       no_robots: true
+
   -
     scope:
       path: "pages/your_domain/TEMPLATE_your_domain.md"
@@ -81,52 +85,42 @@ defaults:
       sitemap: false
       search_exclude: true
       no_robots: true
-  -
-    scope:
-      path: "pages/your_role/TEMPLATE_your_role.md"
-      type: "pages"
-    values:
-      sitemap: false
-      search_exclude: true
-      no_robots: true
-  -
-    scope:
-      path: "pages/your_tasks/TEMPLATE_your_tasks.md"
-      type: "pages"
-    values:
-      sitemap: false
-      search_exclude: true
-      no_robots: true
+
   -
     scope:
       path: "pages/data_life_cycle/"
     values:
       type: Data_life_cycle
       type_img: /assets/img/section-icons/reuse-sustain.svg
+
   -
     scope:
       path: "pages/your_domain/"
     values:
       type: Your_domain
       type_img: /assets/img/section-icons/dna.svg
+
   -
     scope:
       path: "pages/your_tasks/"
     values:
       type: Your_tasks
       type_img: /assets/img/section-icons/tick.svg
+
   -
     scope:
       path: "pages/your_role/"
     values:
       type: Your_role
       type_img: /assets/img/section-icons/role-id.svg
+
   -
     scope:
       path: "pages/tool_assembly/"
     values:
       type: Tool_assembly
       type_img: /assets/img/section-icons/tool-assembly.svg
+
   -
     scope:
       path: "pages/national_resources/"
@@ -134,19 +128,18 @@ defaults:
       type: National_resources
       type_img: /assets/img/section-icons/flag.svg
       datatable: true
+
   -
     scope:
       path: "pages/contribute"
     values:
       sidebar: contribute
+
   -
     scope:
       path: "pages/about"
     values:
       sidebar: about
-
-scholar:
-  style: _bibliography/nature_custom.csl
 
 plugins:
   - elixir-toolkit-theme-plugins

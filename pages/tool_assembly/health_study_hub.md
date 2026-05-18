@@ -23,11 +23,10 @@ Importantly, patient-level personal health data are **not openly published** thr
 
 ## Quick Access
 
-- **Health Study Hub platform:** https://health-study-hub.de
-- **Official NFDI4Health service page:** https://www.nfdi4health.de/en/service/health-study-hub.html
-- **Frequently Asked Questions:** https://www.nfdi4health.de/en/service/health-study-hub/frequently-asked-questions.html
-- **FAIR Checklist for Studies:** (add official checklist link)
-- **Helpdesk:** https://www.nfdi4health.de/en/helpdesk.html
+- [**Health Study Hub platform**](https://health-study-hub.de)
+- [**Official NFDI4Health service page**](https://www.nfdi4health.de/en/service/health-study-hub.html)
+- [**Frequently Asked Questions:**](https://www.nfdi4health.de/en/service/health-study-hub/frequently-asked-questions.html)
+- [**Helpdesk:**](https://www.nfdi4health.de/en/helpdesk.html)
 
 ## Why use this service?
 
@@ -59,8 +58,6 @@ This supports discovery of:
 
 Depending on metadata completeness, exploration can extend down to variable or questionnaire-item level.
 
----
-
 ### Metadata Publication
 
 Data producers can publish descriptive metadata about their studies and associated resources.
@@ -77,8 +74,6 @@ This may include:
 
 Metadata publication improves visibility without requiring open publication of sensitive participant-level data.
 
----
-
 ### FAIR Metadata Exposure
 
 The platform supports FAIR-aligned publication by making metadata:
@@ -90,7 +85,6 @@ The platform supports FAIR-aligned publication by making metadata:
 
 This improves responsible reuse while respecting governance restrictions.
 
----
 
 ### Variable-Level Exploration
 
@@ -105,7 +99,6 @@ Users may compare:
 
 This supports harmonisation planning and secondary analysis preparation.
 
----
 
 ### Repository Aggregation
 
@@ -117,7 +110,6 @@ The platform integrates and harmonises information from public research registri
 
 This reduces fragmentation and improves visibility of distributed health research resources.
 
----
 
 ### Submission Pathways
 
@@ -134,7 +126,6 @@ with support from trained data stewards
 
 This flexibility lowers barriers for FAIR metadata publication.
 
----
 
 ### Data Steward Support
 
@@ -147,7 +138,6 @@ Data stewards support researchers when:
 
 This improves metadata quality and contributor onboarding.
 
----
 
 ## How this service supports the research lifecycle
 
@@ -162,7 +152,6 @@ This supports:
 - reviewing comparable questionnaires
 - planning harmonised data collection
 
----
 
 ### Study Setup and Documentation
 
@@ -174,7 +163,6 @@ This supports:
 - documentation standardisation
 - interoperability readiness
 
----
 
 ### Data Publication
 
@@ -186,7 +174,6 @@ This improves:
 - discoverability
 - FAIR compliance
 
----
 
 ### Controlled Sharing and Access Discovery
 
@@ -198,8 +185,6 @@ Although participant-level health data remain protected, metadata can describe:
 - reuse eligibility
 
 This supports responsible access discovery.
-
----
 
 ### Reuse and Secondary Analysis
 
@@ -228,7 +213,6 @@ The platform improves discoverability through:
 
 Researchers can identify relevant resources without direct access to sensitive datasets.
 
----
 
 ### Accessible
 
@@ -243,7 +227,6 @@ Instead, the platform improves accessibility through:
 
 This allows researchers to understand how data may be requested lawfully.
 
----
 
 ### Interoperable
 
@@ -257,7 +240,6 @@ Interoperability is supported through:
 
 This supports machine-readable exchange and cross-system reuse.
 
----
 
 ### Reusable
 
@@ -271,7 +253,6 @@ Reusability improves through:
 
 This helps researchers assess whether data are fit for reuse.
 
----
 
 ## Governance and Sensitive Data Considerations
 
@@ -290,7 +271,6 @@ Important governance principles include:
 
 The platform enables researchers to discover data resources while respecting legal and organisational access constraints.
 
----
 
 ## Practical Workflow Example
 
@@ -309,7 +289,6 @@ They identify:
 - codebooks
 - study documentation
 
----
 
 **Step 2 — Compare metadata**
 
@@ -321,7 +300,6 @@ This supports:
 - metadata alignment
 - instrument reuse
 
----
 
 **Step 3 — Assess access conditions**
 
@@ -333,7 +311,6 @@ This helps determine:
 - who controls access
 - what approvals may be required
 
----
 
 **Step 4 — Contact data holder**
 
@@ -341,7 +318,6 @@ The team follows documented access procedures.
 
 Because access is governed, participant-level data are only shared through appropriate legal pathways.
 
----
 
 **Step 5 — Support FAIR reuse**
 
@@ -351,7 +327,6 @@ discoverable → assessable → governable → reusable
 
 This demonstrates responsible FAIR implementation in health research.
 
----
 
 ## Related NFDI4Health Services
 
@@ -361,37 +336,31 @@ The Health Study Hub connects strongly with other NFDI4Health services.
 
 Supports local metadata preparation and standardised study management before publication.
 
----
 
 ### Metadata Schema
 
 Provides structured metadata models supporting machine-readable publication.
 
----
 
 ### Terminology Service
 
 Supports semantic consistency and standardised annotation.
 
----
 
 ### Harmonisation
 
 Supports comparison and alignment of heterogeneous datasets.
 
----
 
 ### FAIR Training
 
 Helps researchers and data stewards implement FAIR practices.
 
----
 
 ### Helpdesk
 
 Provides support for onboarding, metadata publication, and FAIR-related questions.
 
----
 
 ## Frequently Asked Questions
 
@@ -403,22 +372,9 @@ Common user questions include:
 - How does the platform support FAIR implementation?
 - Can metadata be submitted automatically?
 
-For full FAQ:
+For full [FAQ](https://www.nfdi4health.de/en/service/health-study-hub/frequently-asked-questions.html)
 
-https://www.nfdi4health.de/en/service/health-study-hub/frequently-asked-questions.html
-
----
 
 ## Support and External Resources
 
-Health Study Hub platform:
 
-https://health-study-hub.de
-
-Official service information:
-
-https://www.nfdi4health.de/en/service/health-study-hub.html
-
-Helpdesk:
-
-https://www.nfdi4health.de/en/helpdesk.html

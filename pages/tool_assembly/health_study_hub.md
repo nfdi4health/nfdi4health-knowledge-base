@@ -3,7 +3,7 @@ title: Health Study Hub
 summary: Discover, publish, and reuse clinical, epidemiological, and public health study metadata in a FAIR-aligned environment.
 type: Tool_assembly
 type_img: /assets/img/section-icons/tool-assembly.svg
-permalink: /health-study-hub
+permalink: /services/health-study-hub
 ---
 
 # Health Study Hub

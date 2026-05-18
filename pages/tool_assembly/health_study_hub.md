@@ -1,6 +1,6 @@
 ---
 title: Health Study Hub
-summary: Platform for publishing and discovering clinical, epidemiological, and public health study metadata.
+summary: Discover, publish, and reuse clinical, epidemiological, and public health study metadata in a FAIR-aligned environment.
 type: Tool_assembly
 type_img: /assets/img/section-icons/tool-assembly.svg
 permalink: /health-study-hub
@@ -8,46 +8,36 @@ permalink: /health-study-hub
 
 # Health Study Hub
 
-## Service Overview
+## What is this service?
 
-(To be completed)
+The Health Study Hub is an NFDI4Health service that supports the FAIR publication, discovery, and reuse of metadata from clinical, epidemiological, and public health studies.
 
-## Purpose of the Service
+The platform serves two primary user groups:
 
-(To be completed)
+- **Data producers**, such as researchers and data-holding organisations, who wish to publish structured study metadata and related documentation.
+- **Data consumers**, such as researchers seeking reusable datasets, study documentation, questionnaires, instruments, or metadata for secondary analysis.
 
-## Intended Users
+The Health Study Hub improves discoverability of health research resources while respecting legal, ethical, and governance constraints for sensitive health data.
 
-(To be completed)
+Importantly, patient-level personal health data are **not openly published** through the platform. Instead, metadata, documentation, and information about access conditions are made discoverable to support responsible reuse.
 
-## Research Life Cycle Integration
+## Quick Access
 
-(To be completed)
+- **Health Study Hub platform:** https://health-study-hub.de
+- **Official NFDI4Health service page:** https://www.nfdi4health.de/en/service/health-study-hub.html
+- **Frequently Asked Questions:** https://www.nfdi4health.de/en/service/health-study-hub/frequently-asked-questions.html
+- **FAIR Checklist for Studies:** (add official checklist link)
+- **Helpdesk:** https://www.nfdi4health.de/en/helpdesk.html
 
-## Main Features
+## Why use this service?
 
-(To be completed)
+The Health Study Hub helps researchers and data stewards to:
 
-## FAIR Relevance
-
-(To be completed)
-
-## Data Protection and Governance
-
-(To be completed)
-
-## Standards and Interoperability
-
-(To be completed)
-
-## Example Workflow / Use Case
-
-(To be completed)
-
-## Related Modules
-
-(To be completed)
-
-## Support and Contact
-
-(To be completed)
+- improve discoverability of study metadata
+- support FAIR publication practices
+- document study resources consistently
+- identify existing datasets relevant for reuse
+- compare variables and instruments across studies
+- improve metadata interoperability
+- connect data producers with potential data users
+- support transparent access pathways for sensitive health data

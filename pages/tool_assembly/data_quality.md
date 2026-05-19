@@ -22,7 +22,7 @@ The goal is to strengthen transparent, efficient, and FAIR-oriented health resea
 
 ## Quick Access
 
-- [Official NFDI4Health Data Quality Service Page](https://www.nfdi4health.de/en/service/data-quality.html)
+- [Official NFDI4Health Data Quality Service Page](https://www.nfdi4health.de/en/service/data-quality-assessments.html)
 - [NFDI4Health Helpdesk](https://www.nfdi4health.de/en/helpdesk.html)
 
 ---
@@ -283,4 +283,5 @@ For support:
 
 Official information:
 
-- [Data Quality Service Page](https://www.nfdi4health.de/en/service/data-quality.html)
+- [Data Quality Service Page](https://www.nfdi4health.de/en/service/data-quality-assessments.html)
+- For further information on data quality assessment tool and methodology, see [here]((https://dataquality.qihs.uni-greifswald.de/)

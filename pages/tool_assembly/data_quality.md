@@ -18,14 +18,12 @@ NFDI4Health addresses this challenge by making data quality assessment more acce
 
 The goal is to strengthen transparent, efficient, and FAIR-oriented health research.
 
----
 
 ## Quick Access
 
 - [Official NFDI4Health Data Quality Service Page](https://www.nfdi4health.de/en/service/data-quality-assessments.html)
 - [NFDI4Health Helpdesk](https://www.nfdi4health.de/en/helpdesk.html)
 
----
 
 ## Why use this service?
 
@@ -48,7 +46,6 @@ High-quality data are essential for:
 - secondary reuse
 - responsible health research
 
----
 
 ## Key Features
 
@@ -65,7 +62,6 @@ This includes:
 
 The service lowers barriers for teams that need practical implementation support.
 
----
 
 ### Tools for Data Quality Assessment
 
@@ -81,7 +77,6 @@ These tools help researchers assess:
 
 Tool support enables repeatable and transparent workflows.
 
----
 
 ### Community Building
 
@@ -96,7 +91,6 @@ This includes:
 
 This helps strengthen common standards and shared practices.
 
----
 
 ### Capacity Building
 
@@ -109,7 +103,6 @@ This includes support for:
 - study coordinators
 - data managers
 
----
 
 ## How this service supports the research lifecycle
 
@@ -124,7 +117,6 @@ This supports:
 - documentation design
 - risk mitigation
 
----
 
 ### Data Collection
 
@@ -135,7 +127,6 @@ Quality assessment concepts support early detection of:
 - structural errors
 - capture problems
 
----
 
 ### Data Processing
 
@@ -146,7 +137,6 @@ Data quality assessment helps identify:
 - coding errors
 - harmonisation problems
 
----
 
 ### Analysis Preparation
 
@@ -158,7 +148,6 @@ This improves:
 - transparency
 - reproducibility
 
----
 
 ### Data Sharing and Reuse
 
@@ -166,7 +155,6 @@ Well-documented quality assessment improves trustworthiness for secondary users.
 
 This supports FAIR reuse.
 
----
 
 ## FAIR Alignment
 
@@ -174,25 +162,21 @@ This supports FAIR reuse.
 
 Quality documentation improves discoverability of trustworthy datasets.
 
----
 
 ### Accessible
 
 Transparent quality reporting improves understanding of dataset usability.
 
----
 
 ### Interoperable
 
 Structured quality assessment supports harmonisation and cross-system compatibility.
 
----
 
 ### Reusable
 
 High-quality and transparently assessed datasets are substantially more reusable.
 
----
 
 ## Governance and Sensitive Data Considerations
 
@@ -208,7 +192,6 @@ Important considerations include:
 
 Quality assessment should be performed in legally compliant research environments.
 
----
 
 ## Practical Workflow Example
 
@@ -220,37 +203,31 @@ A multicentre diabetes study is preparing pooled analysis.
 
 The data steward defines quality assessment criteria.
 
----
 
 **Step 2 — Assess completeness**
 
 The team evaluates missingness across study variables.
 
----
 
 **Step 3 — Check plausibility**
 
 Unexpected values and inconsistencies are identified.
 
----
 
 **Step 4 — Review harmonisation readiness**
 
 Variable structures are assessed before pooling.
 
----
 
 **Step 5 — Document assessment results**
 
 Methods and findings are documented transparently.
 
----
 
 **Step 6 — Proceed to analysis**
 
 Only quality-reviewed data are advanced for downstream analysis.
 
----
 
 ## Related NFDI4Health Services
 
@@ -263,7 +240,6 @@ This service connects with:
 - FAIR Training
 - Helpdesk
 
----
 
 ## Community and Training
 
@@ -273,7 +249,6 @@ A notable example is the NFDI-funded autumn workshop on Data Quality and Initial
 
 This reflects the strategic importance of transparent data quality assessment in health research.
 
----
 
 ## Support and External Resources
 
@@ -284,4 +259,4 @@ For support:
 Official information:
 
 - [Data Quality Service Page](https://www.nfdi4health.de/en/service/data-quality-assessments.html)
-- For further information on data quality assessment tool and methodology, see [here]((https://dataquality.qihs.uni-greifswald.de/)
+- For further information on data quality assessment tool and methodology, see [here](https://dataquality.qihs.uni-greifswald.de/)

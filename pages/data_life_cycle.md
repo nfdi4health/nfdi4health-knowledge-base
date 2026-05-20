@@ -29,7 +29,101 @@ You will find:
 The lifecycle helps researchers, data stewards, and research support teams understand where NFDI4Health services support the research workflow.
 
 ## Explore the lifecycle
+<div class="lifecycle-flow">
 
+<a class="lifecycle-step" href="/study-planning">
+<span class="step-number">1</span>
+<span>Study Planning & Design</span>
+</a>
+
+<span class="lifecycle-arrow">→</span>
+
+<a class="lifecycle-step" href="/data-collection-documentation">
+<span class="step-number">2</span>
+<span>Data Collection & Documentation</span>
+</a>
+
+<span class="lifecycle-arrow">→</span>
+
+<a class="lifecycle-step" href="/data-processing-quality">
+<span class="step-number">3</span>
+<span>Data Processing & Quality Assurance</span>
+</a>
+
+<span class="lifecycle-arrow">→</span>
+
+<a class="lifecycle-step" href="/storage-access-governance">
+<span class="step-number">4</span>
+<span>Storage, Access & Governance</span>
+</a>
+
+<span class="lifecycle-arrow">→</span>
+
+<a class="lifecycle-step" href="/analysis-privacy-preserving-computing">
+<span class="step-number">5</span>
+<span>Analysis & Privacy-Preserving Computing</span>
+</a>
+
+<span class="lifecycle-arrow">→</span>
+
+<a class="lifecycle-step" href="/sharing-discovery-publication">
+<span class="step-number">6</span>
+<span>Sharing, Discovery & Publication</span>
+</a>
+
+<span class="lifecycle-arrow">→</span>
+
+<a class="lifecycle-step" href="/reuse-secondary-research">
+<span class="step-number">7</span>
+<span>Reuse & Secondary Research</span>
+</a>
+
+</div>
+<style>
+.lifecycle-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.lifecycle-step {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.lifecycle-step:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.step-number {
+  background: #c23669;
+  color: white;
+  border-radius: 999px;
+  width: 1.6rem;
+  height: 1.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.lifecycle-arrow {
+  color: #c23669;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+</style>
 <div class="module-grid">
 
 <div class="module-card">

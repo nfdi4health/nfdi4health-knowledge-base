@@ -1,6 +1,9 @@
 ---
 title: Research Data Life Cycle
-permalink: /data-life-cycle
+permalink: /data_life_cycle
+redirect_from:
+  - /data-life-cycle
+  - /data-life-cycle/
 sidebar: data_management
 search_exclude: false
 ---

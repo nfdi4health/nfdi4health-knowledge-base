@@ -1,10 +1,9 @@
-title: NFDI4Health Knowledge Base
+ttitle: NFDI4Health Knowledge Base
 url: "https://nfdi4health.github.io"
 baseurl: "/nfdi4health-knowledge-base"
-# this appears in the html browser tab for the site title (seen mostly by search engines, not users)
+repository: nfdi4health/nfdi4health-knowledge-base
 description: "Practical guidance for managing, documenting, sharing, and reusing personal health research data in line with FAIR principles."
-# Metadata description of the website
-favicon: /assets/img/favicons/favicon.ico
+favicon: /nfdi4health-knowledge-base/assets/img/favicons/favicon.ico
 remote_theme: ELIXIR-Belgium/elixir-toolkit-theme
 
 sass:

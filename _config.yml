@@ -1,4 +1,6 @@
 title: NFDI4Health Knowledge Base
+url: "https://nfdi4health.github.io"
+baseurl: "/nfdi4health-knowledge-base"
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 description: "Practical guidance for managing, documenting, sharing, and reusing personal health research data in line with FAIR principles."
 # Metadata description of the website

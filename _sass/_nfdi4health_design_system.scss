@@ -218,3 +218,27 @@ section#search-section h2 {
   font-weight: 700;
   color: var(--kb-text);
 }
+
+.kb-value-section {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.kb-value-grid div {
+  padding: 1.55rem;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.kb-value-grid div:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--kb-shadow-soft);
+  border-color: rgba(0, 87, 140, 0.24);
+}
+
+.kb-value-grid strong {
+  font-size: 1.12rem;
+}
+
+.kb-value-grid span {
+  font-size: 1.02rem;
+}

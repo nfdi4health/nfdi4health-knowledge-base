@@ -186,3 +186,35 @@
     font-size: 0.95rem;
   }
 }
+
+/* Phase II: Homepage refinement */
+
+.kb-hero {
+  padding: 3.25rem 0 2.5rem;
+}
+
+.kb-hero h1 {
+  max-width: 1050px;
+  font-size: clamp(2.4rem, 4vw, 3.45rem);
+  line-height: 1.12;
+}
+
+.kb-hero p {
+  max-width: 820px;
+  font-size: 1.18rem;
+}
+
+.kb-notice {
+  max-width: 760px;
+}
+
+section#search-section {
+  padding-top: 2.4rem !important;
+  padding-bottom: 2.4rem !important;
+}
+
+section#search-section h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: var(--kb-text);
+}

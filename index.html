@@ -10,20 +10,22 @@ layout: none
     {% if jekyll.environment == "development" %}{% include dev-info.html %}{% endif %}
     {% include topnav.html search=false %}
     <div class="landingpage">
-        <section class="container g-lg-5 mb-5">
-           <div>
-  <h1>NFDI4Health Knowledge Base</h1>
-  <p class="text-center mt-2">
-    Practical guidance for managing, documenting, sharing, and reusing personal health research data.
-  </p>
-  <div style="margin-top:20px; padding:14px 18px; border-left:5px solid #c2185b; background:#fff3f8; border-radius:8px; max-width:900px;">
-    ⚠️ <strong>Development notice:</strong>
-    This NFDI4Health Knowledge Base is under active development.
-    Some legacy RDMkit-derived content may still be present and are currently being reviewed and adapted.
+       <section class="kb-hero">
+  <div class="container g-lg-5">
+    <div class="kb-hero-content">
+      <span class="kb-eyebrow">NFDI4Health Knowledge Base</span>
+      <h1>Manage, document, share, and reuse personal health research data</h1>
+      <p>
+        Practical guidance for FAIR biomedical research data management across the data life cycle.
+      </p>
+
+      <div class="kb-notice">
+        ⚠️ <strong>Development notice:</strong>
+        This Knowledge Base is under active development. Some legacy RDMkit-derived content may still be present and is currently being reviewed and adapted.
+      </div>
+    </div>
   </div>
-</div>
-            
-        </section>
+</section>
         <section id="search-section" class="bg-light py-5">
             <div class="container g-lg-5">
                 <div class="row">
@@ -41,6 +43,24 @@ layout: none
                 </div>
             </div>
     </section>
+        <section class="kb-value-section py-4">
+  <div class="container g-lg-5">
+    <div class="kb-value-grid">
+      <div>
+        <strong>FAIR-oriented</strong>
+        <span>Guidance aligned with findability, accessibility, interoperability, and reuse.</span>
+      </div>
+      <div>
+        <strong>Biomedical-focused</strong>
+        <span>Designed for personal health data, metadata, data quality, privacy, and reuse.</span>
+      </div>
+      <div>
+        <strong>Practice-driven</strong>
+        <span>Use services, modules, how-to guides, and lifecycle pages to solve real RDM tasks.</span>
+      </div>
+    </div>
+  </div>
+</section>
    <section class="kb-browse-section py-5">
   <div class="container g-lg-5">
     <div class="kb-section-heading text-center">

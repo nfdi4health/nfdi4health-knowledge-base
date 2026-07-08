@@ -242,3 +242,27 @@ section#search-section h2 {
 .kb-value-grid span {
   font-size: 1.02rem;
 }
+.kb-browse-card {
+  min-height: 185px;
+  padding: 1.6rem !important;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.kb-browse-card:hover {
+  transform: translateY(-4px);
+}
+
+.kb-browse-card h3,
+.kb-browse-card h4 {
+  font-size: 1.35rem;
+}
+
+.kb-browse-card p {
+  font-size: 1.04rem;
+  line-height: 1.6;
+}
+
+.kb-card-arrow {
+  width: 2.35rem;
+  height: 2.35rem;
+}

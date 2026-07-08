@@ -42,9 +42,10 @@
     .sidebar-collapse {
         background-color: $light;
     }
-    #sidebar>nav .sidebar-title-wrapper {
+
+    #sidebar > nav .sidebar-title-wrapper {
         background: $white;
-}
+    }
 }
 
 #main {
@@ -168,13 +169,6 @@ section#search-section {
 
 /*-----Top navigation-----*/
 
-.navbar-nav .nav-item > a {
-    white-space: nowrap;
-    &.active {
-        background-color: $primary;
-        border-radius: $border-radius;
-    }
-}
 
 /*-----Better tools-----*/
 .tool {
@@ -309,111 +303,9 @@ a:hover {
   font-size: 1.1rem;
   color: #00578c;
 }
-/* NFDI4Health homepage refinement */
 
-.kb-hero {
-  padding: 3rem 0 2rem;
-  background: #ffffff;
-  text-align: center;
-}
+/* NFDI4Health design system */
+@import "nfdi4health_design_system";
 
-.kb-hero-content {
-  max-width: 920px;
-  margin: 0 auto;
-}
 
-.kb-hero h1 {
-  max-width: 880px;
-  margin: 0 auto 1rem;
-  font-size: clamp(2rem, 4vw, 3.4rem);
-  font-weight: 700;
-  line-height: 1.15;
-  color: #152238;
-}
-
-.kb-hero p {
-  max-width: 760px;
-  margin: 0 auto;
-  font-size: 1.2rem;
-  color: #4a5568;
-}
-
-.kb-notice {
-  margin: 1.75rem auto 0;
-  max-width: 900px;
-  padding: 1rem 1.25rem;
-  border-left: 5px solid #c2185b;
-  background: #fff3f8;
-  border-radius: 0.75rem;
-  text-align: left;
-  color: #1f2937;
-}
-
-.kb-value-section {
-  background: #ffffff;
-}
-
-.kb-value-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.kb-value-grid div {
-  padding: 1.25rem;
-  border: 1px solid rgba(0, 87, 140, 0.12);
-  border-radius: 1rem;
-  background: #ffffff;
-}
-
-.kb-value-grid strong {
-  display: block;
-  margin-bottom: 0.35rem;
-  color: #00578c;
-  font-size: 1.05rem;
-}
-
-.kb-value-grid span {
-  display: block;
-  color: #4a5568;
-  line-height: 1.5;
-}
-
-.navbar-nav .nav-item > a {
-  font-size: 0.95rem;
-  font-weight: 500;
-}
-
-.kb-browse-card {
-  min-height: 160px;
-}
-
-.kb-card-arrow {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 999px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 87, 140, 0.08);
-  font-size: 1.2rem;
-}
-
-.kb-browse-card:hover .kb-card-arrow,
-.kb-browse-card:focus-visible .kb-card-arrow {
-  background: rgba(0, 87, 140, 0.16);
-}
-
-@media (max-width: 767.98px) {
-  .kb-value-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .kb-hero {
-    padding-top: 2rem;
-  }
-
-  .kb-notice {
-    font-size: 0.95rem;
-  }
-}
+ 

@@ -21,13 +21,13 @@
   --kb-radius-md: 0.9rem;
   --kb-radius-lg: 1.15rem;
 
-  --kb-font-body: 1rem;
-  --kb-font-small: 0.92rem;
-  --kb-font-eyebrow: 0.82rem;
-  --kb-font-lead: 1.05rem;
-  --kb-font-hero: clamp(2.25rem, 4vw, 3.45rem);
-  --kb-font-section-title: clamp(1.55rem, 2.1vw, 2rem);
-  --kb-font-card-title: 1.05rem;
+  --kb-font-body: 0.95rem;
+  --kb-font-small: 0.86rem;
+  --kb-font-eyebrow: 0.78rem;
+  --kb-font-lead: 1rem;
+  --kb-font-hero: clamp(1.9rem, 2.7vw, 2.75rem);
+  --kb-font-section-title: clamp(1.35rem, 1.65vw, 1.65rem);
+  --kb-font-card-title: 0.98rem;
 }
 
 /* --------------------------------------------------
@@ -94,7 +94,7 @@
   color: var(--kb-text);
   font-size: var(--kb-font-hero);
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.12;
 }
 
 .landingpage .kb-hero p {
@@ -365,6 +365,39 @@ section#search-section .form-control {
 }
 
 /* --------------------------------------------------
+   Final homepage typography override
+-------------------------------------------------- */
+
+.landingpage .kb-hero h1 {
+  font-size: var(--kb-font-hero) !important;
+  line-height: 1.12 !important;
+}
+
+.kb-section-heading h2,
+.kb-browse-section h2,
+section#search-section h2,
+.landingpage > section h2 {
+  font-size: var(--kb-font-section-title) !important;
+  line-height: 1.2 !important;
+}
+
+.kb-eyebrow {
+  font-size: var(--kb-font-eyebrow) !important;
+}
+
+.landingpage .kb-hero p,
+.kb-section-heading p,
+.landingpage p {
+  font-size: var(--kb-font-body) !important;
+}
+
+.kb-value-grid strong,
+.kb-browse-card h3,
+.kb-browse-card h4 {
+  font-size: var(--kb-font-card-title) !important;
+}
+
+/* --------------------------------------------------
    Responsive
 -------------------------------------------------- */
 
@@ -380,21 +413,21 @@ section#search-section .form-control {
   }
 
   .kb-eyebrow {
-    font-size: 0.78rem;
+    font-size: 0.74rem !important;
   }
 
   .landingpage .kb-hero h1 {
     max-width: 100%;
-    font-size: clamp(2rem, 8vw, 2.65rem);
-    line-height: 1.12;
+    font-size: clamp(1.85rem, 7vw, 2.35rem) !important;
+    line-height: 1.12 !important;
   }
 
   .landingpage .kb-hero p {
-    font-size: 1rem;
+    font-size: 0.95rem !important;
   }
 
   .kb-notice {
-    font-size: 0.9rem;
+    font-size: 0.86rem;
   }
 
   section#search-section {
@@ -411,13 +444,13 @@ section#search-section .form-control {
   .kb-browse-section h2,
   section#search-section h2,
   .landingpage > section h2 {
-    font-size: 1.55rem;
+    font-size: 1.4rem !important;
   }
 
   .kb-value-grid strong,
   .kb-browse-card h3,
   .kb-browse-card h4 {
-    font-size: 1rem;
+    font-size: 0.95rem !important;
   }
 
   .kb-browse-card {

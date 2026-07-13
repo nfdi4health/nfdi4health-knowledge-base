@@ -32,6 +32,18 @@
 .landingpage {
   font-family: "Open Sans", sans-serif;
   color: var(--kb-text);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.landingpage p,
+.landingpage li,
+.landingpage span,
+.landingpage a,
+.landingpage input,
+.landingpage button,
+.landingpage label {
+  font-size: var(--kb-font-body);
 }
 
 .landingpage h1,
@@ -78,7 +90,6 @@
   font-size: clamp(2.35rem, 3.25vw, 3.05rem);
   font-weight: 700;
   line-height: 1.12;
-  letter-spacing: -0.018em;
 }
 
 .landingpage .kb-hero p {
@@ -105,6 +116,10 @@
   text-align: left;
   font-size: 0.975rem;
   line-height: 1.55;
+}
+
+.kb-notice strong {
+  font-weight: 700;
 }
 
 /* --------------------------------------------------
@@ -384,18 +399,4 @@ section#search-section .form-control {
   .kb-browse-card {
     min-height: auto;
   }
-}
-/* Temporary connection test — remove after verification */
-body::after {
-  content: "NFDI DESIGN SYSTEM ACTIVE";
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  z-index: 999999;
-  padding: 0.75rem 1rem;
-  background: #ff0000;
-  color: #ffffff;
-  border: 4px solid #000000;
-  font-size: 1rem;
-  font-weight: 700;
 }

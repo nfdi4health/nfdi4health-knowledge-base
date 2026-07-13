@@ -266,47 +266,126 @@ section#search-section h2 {
   width: 2.35rem;
   height: 2.35rem;
 }
-/* Phase II stronger typography correction */
+/* Phase II: balanced homepage typography */
 
-.landingpage .kb-hero h1,
-.kb-hero h1 {
-  font-size: clamp(2.6rem, 4.8vw, 4rem) !important;
-  line-height: 1.08 !important;
-  font-weight: 750 !important;
-  max-width: 1100px !important;
+.landingpage {
+  font-family: "Open Sans", sans-serif;
 }
 
-.landingpage .kb-hero p,
-.kb-hero p {
-  font-size: clamp(1.15rem, 1.5vw, 1.35rem) !important;
-  line-height: 1.55 !important;
+/* Use Exo 2 consistently for homepage headings */
+.landingpage h1,
+.landingpage h2,
+.landingpage h3,
+.kb-eyebrow,
+.nfdi-main-nav {
+  font-family: "Exo 2", sans-serif;
+}
+
+/* Small labels above major headings */
+.kb-eyebrow {
+  margin-bottom: 0.65rem;
+  font-size: 0.875rem; /* 14px */
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.075em;
+}
+
+/* Hero */
+.kb-hero {
+  padding: 3.25rem 0 2.5rem;
+}
+
+.kb-hero-content {
+  max-width: 1040px;
+}
+
+.landingpage .kb-hero h1 {
+  max-width: 940px;
+  margin: 0 auto 1rem;
+  font-size: clamp(2.35rem, 3.6vw, 3.1rem); /* approx. 38–50px */
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--kb-text);
+}
+
+.landingpage .kb-hero p {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: clamp(1.05rem, 1.3vw, 1.25rem); /* approx. 17–20px */
+  line-height: 1.6;
+  color: var(--kb-text-muted);
+}
+
+.kb-notice {
+  max-width: 800px;
+  margin-top: 1.5rem;
+  font-size: 0.975rem;
+  line-height: 1.55;
+}
+
+/* Search */
+section#search-section {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
 }
 
 section#search-section h2 {
-  font-size: clamp(2rem, 3vw, 2.6rem) !important;
-  line-height: 1.2 !important;
+  font-size: clamp(1.75rem, 2.4vw, 2rem); /* approx. 28–32px */
+  font-weight: 700;
+  line-height: 1.2;
 }
 
+/* Value proposition cards */
 .kb-value-grid strong {
-  font-size: 1.2rem !important;
+  font-size: 1.075rem;
+  font-weight: 700;
 }
 
 .kb-value-grid span {
-  font-size: 1.05rem !important;
+  font-size: 1rem;
+  line-height: 1.55;
 }
 
-.kb-section-title,
+/* Browse section */
+.kb-section-heading h2,
 .kb-browse-section h2 {
-  font-size: clamp(2.2rem, 3.6vw, 3rem) !important;
-  line-height: 1.15 !important;
+  margin-bottom: 0.5rem;
+  font-size: clamp(2rem, 2.8vw, 2.375rem); /* approx. 32–38px */
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-.kb-browse-card h3,
-.kb-browse-card h4 {
-  font-size: 1.45rem !important;
+.kb-section-heading p {
+  font-size: 1.075rem;
+  line-height: 1.6;
+  color: var(--kb-text-muted);
+}
+
+.kb-browse-card h3 {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 700;
+  line-height: 1.3;
 }
 
 .kb-browse-card p {
-  font-size: 1.08rem !important;
-  line-height: 1.6 !important;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  .landingpage .kb-hero h1 {
+    font-size: clamp(2rem, 9vw, 2.55rem);
+    line-height: 1.14;
+  }
+
+  .landingpage .kb-hero p {
+    font-size: 1.05rem;
+  }
+
+  .kb-section-heading h2,
+  .kb-browse-section h2 {
+    font-size: 1.85rem;
+  }
 }

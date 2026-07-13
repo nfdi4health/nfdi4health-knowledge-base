@@ -13,114 +13,208 @@
   --kb-surface: #ffffff;
 
   --kb-border: rgba(0, 87, 140, 0.14);
-  --kb-shadow-soft: 0 12px 30px rgba(21, 34, 56, 0.08);
+  --kb-shadow-soft: 0 10px 26px rgba(21, 34, 56, 0.08);
+  --kb-shadow-hover: 0 16px 34px rgba(21, 34, 56, 0.12);
 
   --kb-radius-sm: 0.5rem;
   --kb-radius-md: 0.9rem;
-  --kb-radius-lg: 1.25rem;
+  --kb-radius-lg: 1.15rem;
 
-  --kb-font-hero: clamp(2.3rem, 4vw, 3.2rem);
-  --kb-font-section: clamp(1.9rem, 3vw, 2.6rem);
-  --kb-font-card-title: 1.25rem;
-  --kb-font-body: 1.05rem;
+  --kb-font-body: 1rem;
   --kb-font-small: 0.95rem;
+  --kb-font-card-title: 1.25rem;
 }
 
-/* Typography */
+/* --------------------------------------------------
+   Global homepage typography
+-------------------------------------------------- */
 
-.kb-eyebrow {
-  display: block;
-  margin-bottom: 0.75rem;
-  color: var(--kb-primary);
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.kb-section-title {
-  font-size: var(--kb-font-section);
-  font-weight: 700;
-  line-height: 1.2;
+.landingpage {
+  font-family: "Open Sans", sans-serif;
   color: var(--kb-text);
 }
 
-.kb-section-subtitle {
-  max-width: 760px;
-  margin: 0.75rem auto 0;
-  font-size: var(--kb-font-body);
-  color: var(--kb-text-muted);
-  line-height: 1.6;
+.landingpage h1,
+.landingpage h2,
+.landingpage h3,
+.kb-eyebrow {
+  font-family: "Exo 2", sans-serif;
 }
 
-/* Hero */
+/* --------------------------------------------------
+   Eyebrow labels
+-------------------------------------------------- */
+
+.kb-eyebrow {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: var(--kb-primary);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------
+   Hero
+-------------------------------------------------- */
 
 .kb-hero {
-  padding: 4rem 0 3rem;
+  padding: 3.25rem 0 2.6rem;
   background: var(--kb-bg);
   text-align: center;
 }
 
 .kb-hero-content {
-  max-width: 1080px;
+  max-width: 1040px;
   margin: 0 auto;
 }
 
-.kb-hero h1 {
-  max-width: 980px;
+.landingpage .kb-hero h1 {
+  max-width: 920px;
   margin: 0 auto 1rem;
-  font-size: var(--kb-font-hero);
-  font-weight: 700;
-  line-height: 1.16;
   color: var(--kb-text);
+  font-size: clamp(2.35rem, 3.25vw, 3.05rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.018em;
 }
 
-.kb-hero p {
-  max-width: 780px;
+.landingpage .kb-hero p {
+  max-width: 760px;
   margin: 0 auto;
-  font-size: 1.22rem;
-  line-height: 1.65;
   color: var(--kb-text-muted);
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(1.05rem, 1.25vw, 1.2rem);
+  line-height: 1.6;
 }
 
-/* Notice */
+/* --------------------------------------------------
+   Development notice
+-------------------------------------------------- */
 
 .kb-notice {
-  margin: 1.75rem auto 0;
-  max-width: 820px;
+  max-width: 800px;
+  margin: 1.5rem auto 0;
   padding: 1rem 1.25rem;
   border-left: 5px solid var(--kb-accent);
-  background: #fff3f8;
   border-radius: var(--kb-radius-md);
-  text-align: left;
+  background: #fff3f8;
   color: #1f2937;
-  font-size: var(--kb-font-small);
+  text-align: left;
+  font-size: 0.975rem;
+  line-height: 1.55;
 }
 
-/* Value Cards */
+/* --------------------------------------------------
+   Section headings
+-------------------------------------------------- */
+
+.kb-section-heading {
+  margin-bottom: 2rem;
+}
+
+.kb-section-heading h2,
+.kb-browse-section h2 {
+  margin-bottom: 0.55rem;
+  color: var(--kb-text);
+  font-size: clamp(2rem, 2.6vw, 2.35rem);
+  font-weight: 700;
+  line-height: 1.18;
+}
+
+.kb-section-heading p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: var(--kb-text-muted);
+  font-size: 1.075rem;
+  line-height: 1.55;
+}
+
+/* --------------------------------------------------
+   Search section
+-------------------------------------------------- */
+
+section#search-section {
+  padding-top: 2.35rem !important;
+  padding-bottom: 2.35rem !important;
+  background: #f5f7f9 !important;
+}
+
+section#search-section h2 {
+  margin-bottom: 1rem !important;
+  color: var(--kb-text);
+  font-family: "Exo 2", sans-serif;
+  font-size: clamp(1.75rem, 2.2vw, 2rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+section#search-section form {
+  max-width: 660px;
+}
+
+section#search-section .input-group {
+  min-height: 52px;
+  overflow: hidden;
+  border: 1px solid var(--kb-border);
+  border-radius: 0.75rem;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(21, 34, 56, 0.05);
+}
+
+section#search-section .input-group-text,
+section#search-section .form-control {
+  background: #ffffff !important;
+}
+
+section#search-section .form-control {
+  font-size: 1.05rem;
+}
+
+/* --------------------------------------------------
+   Value proposition cards
+-------------------------------------------------- */
 
 .kb-value-section {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   background: var(--kb-bg);
 }
 
 .kb-value-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 1.15rem;
 }
 
-.kb-value-grid div {
-  padding: 1.35rem;
+.kb-value-grid > div {
+  min-height: 124px;
+  padding: 1.45rem;
   border: 1px solid var(--kb-border);
   border-radius: var(--kb-radius-md);
   background: var(--kb-surface);
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.kb-value-grid > div:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 87, 140, 0.24);
+  box-shadow: var(--kb-shadow-soft);
 }
 
 .kb-value-grid strong {
   display: block;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.45rem;
   color: var(--kb-primary);
-  font-size: 1.08rem;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.12rem;
+  font-weight: 700;
+  line-height: 1.3;
 }
 
 .kb-value-grid span {
@@ -130,29 +224,108 @@
   line-height: 1.55;
 }
 
-/* Cards */
+/* --------------------------------------------------
+   Browse section
+-------------------------------------------------- */
+
+.kb-browse-section {
+  background: var(--kb-bg-soft);
+}
+
+.kb-browse-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.35rem;
+}
 
 .kb-browse-card {
-  min-height: 170px;
+  min-height: 178px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+
+  border: 1px solid rgba(0, 87, 140, 0.08);
   border-radius: var(--kb-radius-lg);
+  background: #ffffff;
   box-shadow: var(--kb-shadow-soft);
+
+  color: var(--kb-text);
+  text-decoration: none;
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.kb-browse-card:hover,
+.kb-browse-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: rgba(0, 87, 140, 0.2);
+  box-shadow: var(--kb-shadow-hover);
+  color: var(--kb-text);
+}
+
+.kb-browse-card:focus-visible {
+  outline: 3px solid rgba(0, 87, 140, 0.25);
+  outline-offset: 3px;
+}
+
+.kb-card-icon {
+  flex: 0 0 3rem;
+  width: 3rem;
+  height: 3rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.85rem;
+  background: var(--kb-bg-soft);
+}
+
+.kb-card-icon img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.kb-card-content {
+  flex: 1 1 auto;
 }
 
 .kb-browse-card h3,
 .kb-browse-card h4 {
+  margin: 0 0 0.45rem;
+  color: var(--kb-text);
+  font-family: "Exo 2", sans-serif;
   font-size: var(--kb-font-card-title);
   font-weight: 700;
+  line-height: 1.28;
+}
+
+.kb-browse-card p {
+  margin: 0;
+  color: var(--kb-text-muted);
+  font-size: 1rem;
+  line-height: 1.55;
 }
 
 .kb-card-arrow {
-  width: 2.15rem;
-  height: 2.15rem;
-  border-radius: 999px;
+  flex: 0 0 2.25rem;
+  width: 2.25rem;
+  height: 2.25rem;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  border-radius: 999px;
   background: rgba(0, 87, 140, 0.08);
-  font-size: 1.2rem;
+  color: var(--kb-primary);
+  font-size: 1.15rem;
+
+  transition: background 0.18s ease;
 }
 
 .kb-browse-card:hover .kb-card-arrow,
@@ -160,223 +333,28 @@
   background: rgba(0, 87, 140, 0.16);
 }
 
-/* Navigation */
+/* --------------------------------------------------
+   Responsive
+-------------------------------------------------- */
 
-.navbar-nav .nav-item {
-  margin-inline: 0.35rem;
+@media (max-width: 991.98px) {
+  .kb-browse-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
-
-.navbar-nav .nav-item > a {
-  font-size: 0.95rem;
-  font-weight: 600;
-}
-
-/* Responsive */
 
 @media (max-width: 767.98px) {
   .kb-hero {
     padding: 2.5rem 0 2rem;
   }
 
-  .kb-value-grid {
-    grid-template-columns: 1fr;
+  .kb-eyebrow {
+    font-size: 0.875rem;
   }
 
-  .kb-notice {
-    font-size: 0.95rem;
-  }
-}
-
-/* Phase II: Homepage refinement */
-
-.kb-hero {
-  padding: 3.25rem 0 2.5rem;
-}
-
-.kb-hero h1 {
-  max-width: 1050px;
-  font-size: clamp(2.4rem, 4vw, 3.45rem);
-  line-height: 1.12;
-}
-
-.kb-hero p {
-  max-width: 820px;
-  font-size: 1.18rem;
-}
-
-.kb-notice {
-  max-width: 760px;
-}
-
-section#search-section {
-  padding-top: 2.4rem !important;
-  padding-bottom: 2.4rem !important;
-}
-
-section#search-section h2 {
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
-  font-weight: 700;
-  color: var(--kb-text);
-}
-
-.kb-value-section {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.kb-value-grid div {
-  padding: 1.55rem;
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
-}
-
-.kb-value-grid div:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--kb-shadow-soft);
-  border-color: rgba(0, 87, 140, 0.24);
-}
-
-.kb-value-grid strong {
-  font-size: 1.12rem;
-}
-
-.kb-value-grid span {
-  font-size: 1.02rem;
-}
-.kb-browse-card {
-  min-height: 185px;
-  padding: 1.6rem !important;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
-}
-
-.kb-browse-card:hover {
-  transform: translateY(-4px);
-}
-
-.kb-browse-card h3,
-.kb-browse-card h4 {
-  font-size: 1.35rem;
-}
-
-.kb-browse-card p {
-  font-size: 1.04rem;
-  line-height: 1.6;
-}
-
-.kb-card-arrow {
-  width: 2.35rem;
-  height: 2.35rem;
-}
-/* Phase II: balanced homepage typography */
-
-.landingpage {
-  font-family: "Open Sans", sans-serif;
-}
-
-/* Use Exo 2 consistently for homepage headings */
-.landingpage h1,
-.landingpage h2,
-.landingpage h3,
-.kb-eyebrow,
-.nfdi-main-nav {
-  font-family: "Exo 2", sans-serif;
-}
-
-/* Small labels above major headings */
-.kb-eyebrow {
-  margin-bottom: 0.65rem;
-  font-size: 0.875rem; /* 14px */
-  font-weight: 700;
-  line-height: 1.3;
-  letter-spacing: 0.075em;
-}
-
-/* Hero */
-.kb-hero {
-  padding: 3.25rem 0 2.5rem;
-}
-
-.kb-hero-content {
-  max-width: 1040px;
-}
-
-.landingpage .kb-hero h1 {
-  max-width: 940px;
-  margin: 0 auto 1rem;
-  font-size: clamp(2.35rem, 3.6vw, 3.1rem); /* approx. 38–50px */
-  font-weight: 700;
-  line-height: 1.12;
-  letter-spacing: -0.02em;
-  color: var(--kb-text);
-}
-
-.landingpage .kb-hero p {
-  max-width: 760px;
-  margin: 0 auto;
-  font-size: clamp(1.05rem, 1.3vw, 1.25rem); /* approx. 17–20px */
-  line-height: 1.6;
-  color: var(--kb-text-muted);
-}
-
-.kb-notice {
-  max-width: 800px;
-  margin-top: 1.5rem;
-  font-size: 0.975rem;
-  line-height: 1.55;
-}
-
-/* Search */
-section#search-section {
-  padding-top: 2.5rem !important;
-  padding-bottom: 2.5rem !important;
-}
-
-section#search-section h2 {
-  font-size: clamp(1.75rem, 2.4vw, 2rem); /* approx. 28–32px */
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-/* Value proposition cards */
-.kb-value-grid strong {
-  font-size: 1.075rem;
-  font-weight: 700;
-}
-
-.kb-value-grid span {
-  font-size: 1rem;
-  line-height: 1.55;
-}
-
-/* Browse section */
-.kb-section-heading h2,
-.kb-browse-section h2 {
-  margin-bottom: 0.5rem;
-  font-size: clamp(2rem, 2.8vw, 2.375rem); /* approx. 32–38px */
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.kb-section-heading p {
-  font-size: 1.075rem;
-  line-height: 1.6;
-  color: var(--kb-text-muted);
-}
-
-.kb-browse-card h3 {
-  font-size: 1.25rem; /* 20px */
-  font-weight: 700;
-  line-height: 1.3;
-}
-
-.kb-browse-card p {
-  font-size: 1rem;
-  line-height: 1.55;
-}
-
-/* Mobile */
-@media (max-width: 767.98px) {
   .landingpage .kb-hero h1 {
-    font-size: clamp(2rem, 9vw, 2.55rem);
+    max-width: 100%;
+    font-size: clamp(2rem, 8vw, 2.5rem);
     line-height: 1.14;
   }
 
@@ -384,9 +362,27 @@ section#search-section h2 {
     font-size: 1.05rem;
   }
 
+  .kb-notice {
+    font-size: 0.95rem;
+  }
+
+  section#search-section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .kb-value-grid,
+  .kb-browse-grid {
+    grid-template-columns: 1fr;
+  }
+
   .kb-section-heading h2,
   .kb-browse-section h2 {
     font-size: 1.85rem;
+  }
+
+  .kb-browse-card {
+    min-height: auto;
   }
 }
 /* Temporary connection test — remove after verification */

@@ -8,101 +8,159 @@
     </a>
 
     <nav class="nfdi-main-nav" aria-label="Main navigation">
+
       <a href="{{ '/' | relative_url }}">Home</a>
+
       <a href="{{ '/data_life_cycle' | relative_url }}">Data life cycle</a>
+
       <a href="{{ '/your_role' | relative_url }}">Roles</a>
+
       <a href="{{ '/services' | relative_url }}">Services</a>
+
       <a href="{{ '/your_tasks' | relative_url }}">How-to guides</a>
+
       <a href="{{ '/modules' | relative_url }}">Modules</a>
-      <a href="https://www.nfdi4health.de/en/helpdesk.html">Helpdesk</a>
-      <a href="{{ '/search' | relative_url }}" aria-label="Search" class="nfdi-search">🔍</a>
+
+      <a href="https://github.com/nfdi4health/nfdi4health-knowledge-base"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="nfdi-github">
+
+        <svg class="github-icon" viewBox="0 0 16 16" aria-hidden="true">
+          <path fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8a8.013 8.013 0 0 0 5.47 7.59c.4.07.55-.17.55-.38
+                0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+                -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87
+                2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95
+                0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21
+                2.2.82a7.62 7.62 0 0 1 4 0c1.53-1.04 2.2-.82
+                2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82
+                1.27.82 2.15 0 3.07-1.87 3.75-3.65
+                3.95.29.25.54.73.54 1.48
+                0 1.07-.01 1.93-.01 2.2
+                0 .21.15.46.55.38A8.013 8.013 0 0 0 16
+                8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+
+        <span>GitHub</span>
+
+      </a>
+
+      <a href="https://www.nfdi4health.de/en/helpdesk.html"
+         target="_blank"
+         rel="noopener noreferrer">
+         Helpdesk
+      </a>
+
     </nav>
 
   </div>
 </header>
 
 <style>
-  .nfdi-topbar {
+
+.nfdi-topbar {
     height: 22px;
     background: #00578c;
     width: 100%;
-  }
+}
 
-  .nfdi-site-header {
+.nfdi-site-header {
     background: #ffffff;
     border-bottom: 1px solid #d8e1e8;
     min-height: 82px;
-  }
+}
 
-  .nfdi-header-inner {
+.nfdi-header-inner {
     max-width: 1240px;
     margin: 0 auto;
     padding: 0 24px;
     min-height: 82px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+}
 
-  .nfdi-brand img {
+.nfdi-brand img {
     height: 60px;
     width: auto;
     display: block;
-  }
+}
 
-  .nfdi-main-nav {
+.nfdi-main-nav {
     display: flex;
     align-items: center;
     gap: 0.15rem;
     font-family: "Exo 2", sans-serif;
     font-size: 1rem;
-  }
+}
 
-  .nfdi-main-nav a {
+.nfdi-main-nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+
     color: #152238;
     text-decoration: none;
+
     padding: 0.65rem 0.8rem;
+
     line-height: 1.25;
+
     border-right: 1px solid #d8e1e8;
+
     font-weight: 500;
-  }
 
-  .nfdi-main-nav a:last-child {
+    transition: color .18s ease;
+}
+
+.nfdi-main-nav a:last-child {
     border-right: none;
-  }
+}
 
-  .nfdi-main-nav a:hover,
-  .nfdi-main-nav a:focus-visible {
+.nfdi-main-nav a:hover,
+.nfdi-main-nav a:focus-visible {
     color: #00578c;
-  }
+}
 
-  .nfdi-main-nav a:focus-visible {
-    outline: 3px solid rgba(0, 87, 140, 0.25);
+.nfdi-main-nav a:focus-visible {
+    outline: 3px solid rgba(0,87,140,.25);
     outline-offset: 3px;
-    border-radius: 0.35rem;
-  }
+    border-radius: .35rem;
+}
 
-  .nfdi-search {
-    font-size: 1.05rem;
-  }
+.github-icon {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+}
 
-  @media (max-width: 900px) {
+.nfdi-github:hover .github-icon {
+    transform: scale(1.08);
+    transition: transform .18s ease;
+}
+
+@media (max-width:900px) {
+
     .nfdi-header-inner {
-      flex-direction: column;
-      align-items: center;
-      padding: 12px 16px;
-      gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 16px;
+        gap: 10px;
     }
 
     .nfdi-brand img {
-      height: 46px;
+        height: 46px;
     }
 
     .nfdi-main-nav {
-      justify-content: center;
-      flex-wrap: wrap;
-      row-gap: 0.5rem;
-      font-size: 0.95rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: .5rem;
+        font-size: .95rem;
     }
-  }
+
+}
+
 </style>

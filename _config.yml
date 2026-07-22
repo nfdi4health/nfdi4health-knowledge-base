@@ -3,22 +3,18 @@ url: "https://nfdi4health.github.io"
 baseurl: "/nfdi4health-knowledge-base"
 repository: nfdi4health/nfdi4health-knowledge-base
 description: "Practical guidance for managing, documenting, sharing, and reusing personal health research data in line with FAIR principles."
-favicon: /nfdi4health-knowledge-base/assets/img/favicons/favicon.ico
 remote_theme: ELIXIR-Belgium/elixir-toolkit-theme
 
 sass:
   style: compressed
   sourcemap: never
 
-gtag: G-RXQ55EFTTH
-# Google analytics tag
+# No analytics configured yet — add your own `gtag:` / `matomo:` + `matomo_id:` keys here
+# once NFDI4Health has its own account. Previously pointed to ELIXIR's, removed to avoid
+# mixing visitor data.
 
-matomo: https://webstats.elixir-europe.org/
-# Matomo domain where Matomo is running
-matomo_id: 2
-
-dsw_deep_link_prefix: https://researchers.dsw.elixir-europe.org/knowledge-models/6932a8c8-6c67-46f9-b6d0-651883d116df/preview?questionUuid=
-# prefix for DSW deep links to a certain question
+# No DSW deep-link configured — add `dsw_deep_link_prefix:` here if/when NFDI4Health has
+# its own Data Stewardship Wizard knowledge model. Previously pointed to ELIXIR's.
 
 theme_variables:
   dev-info-banner: true
@@ -50,7 +46,6 @@ defaults:
       sidebar: data_management
       search_exclude: false
       no_robots: true
-
   -
     scope:
       path: "pages/data_life_cycle/TEMPLATE_rdm_cycle.md"
@@ -59,7 +54,6 @@ defaults:
       sitemap: false
       search_exclude: true
       no_robots: true
-
   -
     scope:
       path: "pages/national_resources/TEMPLATE_resources.md"
@@ -68,7 +62,6 @@ defaults:
       sitemap: false
       search_exclude: true
       no_robots: true
-
   -
     scope:
       path: "pages/tool_assembly/TEMPLATE_tool_assembly.md"
@@ -77,7 +70,6 @@ defaults:
       sitemap: false
       search_exclude: true
       no_robots: true
-
   -
     scope:
       path: "pages/your_domain/TEMPLATE_your_domain.md"
@@ -86,42 +78,36 @@ defaults:
       sitemap: false
       search_exclude: true
       no_robots: true
-
   -
     scope:
       path: "pages/data_life_cycle/"
     values:
       type: Data_life_cycle
       type_img: /assets/img/section-icons/reuse-sustain.svg
-
   -
     scope:
       path: "pages/your_domain/"
     values:
       type: Your_domain
       type_img: /assets/img/section-icons/dna.svg
-
   -
     scope:
       path: "pages/your_tasks/"
     values:
       type: Your_tasks
       type_img: /assets/img/section-icons/tick.svg
-
   -
     scope:
       path: "pages/your_role/"
     values:
       type: Your_role
       type_img: /assets/img/section-icons/role-id.svg
-
   -
     scope:
       path: "pages/tool_assembly/"
     values:
       type: Tool_assembly
       type_img: /assets/img/section-icons/tool-assembly.svg
-
   -
     scope:
       path: "pages/national_resources/"
@@ -129,13 +115,11 @@ defaults:
       type: National_resources
       type_img: /assets/img/section-icons/flag.svg
       datatable: true
-
   -
     scope:
       path: "pages/contribute"
     values:
       sidebar: contribute
-
   -
     scope:
       path: "pages/about"

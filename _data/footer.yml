@@ -1,27 +1,36 @@
-columns:
-  - title: NFDI4Health
-    links:
-      - title: About NFDI4Health
-        url: https://www.nfdi4health.de/en/about-us.html
-      - title: Services
-        url: https://www.nfdi4health.de/en/service.html
-      - title: Helpdesk
-        url: https://www.nfdi4health.de/en/helpdesk.html
+copyright: "NFDI4Health Knowledge Base by [NFDI4Health](https://www.nfdi4health.de/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/), except where otherwise noted."
+extra_line: ""
 
-  - title: Knowledge Base
-    links:
-      - title: Contributing
+columns:
+  - type: links
+    title: NFDI4Health
+    width: 3
+    children:
+      - url_text: About NFDI4Health
+        external_url: https://www.nfdi4health.de/en/about-us.html
+      - url_text: Services
+        external_url: https://www.nfdi4health.de/en/service.html
+      - url_text: Helpdesk
+        external_url: https://www.nfdi4health.de/en/helpdesk.html
+
+  - type: links
+    title: Knowledge Base
+    width: 3
+    children:
+      - url_text: Contributing
         url: /how_to_contribute
-      - title: Module catalogue
+      - url_text: Module catalogue
         url: /modules
-      - title: Training resources
+      - url_text: Training resources
         url: /all_training_resources
 
-  - title: Legal
-    links:
-      - title: Imprint
-        url: https://www.nfdi4health.de/en/imprint.html
-      - title: Data protection
-        url: https://www.nfdi4health.de/en/data-protection.html
-      - title: Accessibility
-        url: https://www.nfdi4health.de/en/accessibility-statement.html
+  - type: links
+    title: Legal
+    width: 3
+    children:
+      - url_text: Imprint
+        external_url: https://www.nfdi4health.de/en/imprint.html
+      - url_text: Data protection
+        external_url: https://www.nfdi4health.de/en/data-protection.html
+      - url_text: Accessibility
+        external_url: https://www.nfdi4health.de/en/accessibility-statement.html

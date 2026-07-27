@@ -42,9 +42,10 @@
     .sidebar-collapse {
         background-color: $light;
     }
-    #sidebar>nav .sidebar-title-wrapper {
+
+    #sidebar > nav .sidebar-title-wrapper {
         background: $white;
-}
+    }
 }
 
 #main {
@@ -168,13 +169,6 @@ section#search-section {
 
 /*-----Top navigation-----*/
 
-.navbar-nav .nav-item > a {
-    white-space: nowrap;
-    &.active {
-        background-color: $primary;
-        border-radius: $border-radius;
-    }
-}
 
 /*-----Better tools-----*/
 .tool {
@@ -309,3 +303,9 @@ a:hover {
   font-size: 1.1rem;
   color: #00578c;
 }
+
+/* NFDI4Health design system */
+@import "nfdi4health_design_system";
+
+
+ 

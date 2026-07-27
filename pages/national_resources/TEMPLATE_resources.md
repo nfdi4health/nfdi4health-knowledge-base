@@ -69,10 +69,9 @@ national_resources:
 <!--- e.g. human data, covid-19. Please, only add domain-specific resources that you think don't fit in the table at the bottom--->
 
 <!--- IF APPLICABLE
-## Bibliography 
+## Bibliography
 
-{% bibliography --cited %}
+Add bibliography entries here if needed.
 
-
-More info on how to use a bibliography can be found in our style guide: https://rdmkit.elixir-europe.org/style_guide#bibliography
+Do not use the Liquid bibliography tag unless the required bibliography plugin is enabled.
 --->

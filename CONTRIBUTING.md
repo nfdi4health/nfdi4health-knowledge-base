@@ -1,21 +1,17 @@
-# Contributing to the ELIXIR RDMkit
 
-Thank you very much for taking the time to contribute! 
+# Contributing to the NFDI4Health Knowledge Base
 
-## Code of Conduct 
+Thank you for taking the time to contribute!
 
-This project is governed by a [code of conduct](https://github.com/elixir-europe/rdmkit/blob/master/CODE_OF_CONDUCT.md). By participating you are expected to respect this code. You can report inappropriate behaviour to rdm-coc@elixir-europe.org. 
+## Code of Conduct
 
-## How to contribute 
+This project is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you're expected to uphold it. If you need to report a concern, please contact the [NFDI4Health Helpdesk](https://www.nfdi4health.de/en/helpdesk.html).
 
-You can create new pages or report errors or typos in two ways:
- - Use the GitHub web interface ([How to contribute](https://rdmkit.elixir-europe.org/how_to_contribute))
- - Send a text file with your suggested changes to the editors (rdm-editors@elixir-europe.org). 
+## How to contribute
 
-### Reporting a bug or a typo 
+Right now, all contributions go through GitHub:
 
-Bugs or remarks are tracked as GitHub issues. You can create an issue and choose the appropriate template to fill in. 
+- **Found a bug or a typo?** [Open an issue](https://github.com/nfdi4health/nfdi4health-knowledge-base/issues/new/choose) and pick the relevant template.
+- **Want to add or improve content?** Open a pull request directly, or start with an issue first if you'd like feedback before writing.
 
-### Adding a new page or changing an existing page
-
-See our [How to contribute page](https://rdmkit.elixir-europe.org/how_to_contribute).
+For a step-by-step walkthrough, see our [How to contribute page](https://nfdi4health.github.io/nfdi4health-knowledge-base/how_to_contribute).

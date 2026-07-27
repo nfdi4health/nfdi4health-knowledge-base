@@ -1,6 +1,7 @@
 ---
 search_exclude: true
 layout: none
+contributors: [Atinkut A. Zeleke]
 ---
 
 <!doctype html>
@@ -104,23 +105,18 @@ layout: none
                     </div>
                     <div class="col-lg-7">
                         <h2>We welcome contributors!</h2>
-                        <p>The NFDI4Health Knowledge Base is collaboratively maintained by data stewards, service owners, trainers, and community experts. Contributions help keep the guidance accurate, practical, and 
-                            responsive to community needs.
-                         </p>
-                         <p>Contributions help ensure that guidance, service documentation, and training materials remain accurate, practical, and aligned with evolving community needs.
-                         </p>
+                        <p>The NFDI4Health Knowledge Base is collaboratively maintained by data stewards, service owners, trainers, and community experts. Contributions help keep the guidance accurate, practical, and responsive to community needs.</p>
+                        {%- if page.contributors %}
+                        <div class="mt-3">
+                          {% include contributor-minitiles-page.html contributors_list=page.contributors %}
+                        </div>
+                        {%- endif %}
                     </div>
                     <div class="col-lg-3 my-auto">
                         <a class="btn btn-primary btn-lg rounded-pill px-4" href="{{ '/how_to_contribute' | relative_url }}">Start contributing</a>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="py-5">
-            
-        </section>
-        <section class="py-5 bg-light">
-            
         </section>
     </div>
     {%- if site.theme_variables.back_to_top or site.theme_variables.back_to_top == nil %}

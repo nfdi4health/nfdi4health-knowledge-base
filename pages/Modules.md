@@ -1,4 +1,3 @@
-
 ---
 title: Training Module Catalogue
 description: Self-paced NFDI4Health learning modules for FAIR biomedical research data management.

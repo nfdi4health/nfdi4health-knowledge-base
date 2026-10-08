@@ -6,8 +6,6 @@ type_img: /assets/img/section-icons/tool-assembly.svg
 permalink: /services/data-quality
 ---
 
-# Data Quality Assessments
-
 ## What is this service?
 
 The NFDI4Health Data Quality service supports researchers, data stewards, and health data professionals in assessing and improving the quality of research data used in clinical, epidemiological, and public health studies.

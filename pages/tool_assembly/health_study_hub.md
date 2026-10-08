@@ -6,8 +6,6 @@ type_img: /assets/img/section-icons/tool-assembly.svg
 permalink: /services/health-study-hub
 ---
 
-# Health Study Hub
-
 ## What is this service?
 
 The Health Study Hub is an NFDI4Health service that supports the FAIR publication, discovery, and reuse of metadata from clinical, epidemiological, and public health studies.

@@ -4,8 +4,6 @@ description: Overview of NFDI4Health services supporting FAIR personal health da
 permalink: /services
 ---
 
-# NFDI4Health Services
-
 NFDI4Health provides technical infrastructure and services for FAIR health data. These services help make clinical, epidemiological, and public health research data findable and accessible while respecting data protection, ethical requirements, and reuse conditions.
 
 This knowledge base page summarises the NFDI4Health service ecosystem and links each service to practical RDM guidance, training modules, and owner-maintained service pages.

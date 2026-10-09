@@ -27,37 +27,39 @@ contributors: [Atinkut A. Zeleke]
           <title id="kb-cycle-svg-title">Research data lifecycle: Plan, Collect, Process, Analyse, Preserve, Share, Reuse and Storage Management</title>
           <desc id="kb-cycle-svg-desc">Illustrated seven-stage lifecycle with clickable segments. Choose a stage to jump to its detailed guidance. Choose the centre for storage across all stages. Matching accessible text links are provided to the right and below.</desc>
           <image href="{{ '/assets/img/section-icons/rdmkit-storage-lifecycle.png' | relative_url }}" x="0" y="0" width="1254" height="1254" preserveAspectRatio="xMidYMid meet"/>
+          <!-- Hotspot contours are traced from the actual RDMkit-style PNG and inset 5 px,
+               so the blue hover outline follows the stage shapes without crossing the white separators. -->
           <a href="#stage-plan" class="kb-cycle__image-hotspot" aria-label="Plan: jump to Plan guidance">
             <title>Plan: jump to guidance</title>
-            <path d="M 651.78 57.54 A 568 568 0 0 1 1067.97 267.0 L 853.7 440.96 A 292 292 0 0 0 639.74 333.28 Z"/>
+            <path d="M 647 41 L 716 178 L 716 186 L 644 325 L 694 333 L 730 345 L 756 357 L 801 386 L 842 425 L 996 392 L 1065 250 L 1042 221 L 1005 184 L 960 147 L 915 117 L 863 90 L 824 74 L 755 54 L 695 44 Z" stroke-linejoin="round"/>
           </a>
           <a href="#stage-collect" class="kb-cycle__image-hotspot" aria-label="Collect: jump to Collect guidance">
             <title>Collect: jump to guidance</title>
-            <path d="M 1086.11 290.57 A 568 568 0 0 1 1181.84 746.55 L 912.24 687.49 A 292 292 0 0 0 863.02 453.07 Z"/>
+            <path d="M 1088 277 L 1024 410 L 1017 417 L 863 451 L 888 492 L 899 518 L 909 552 L 916 604 L 915 645 L 911 670 L 1031 773 L 1186 738 L 1196 686 L 1200 638 L 1199 575 L 1195 537 L 1182 473 L 1165 419 L 1144 370 L 1118 322 Z" stroke-linejoin="round"/>
           </a>
           <a href="#stage-process" class="kb-cycle__image-hotspot" aria-label="Process: jump to Process guidance">
             <title>Process: jump to guidance</title>
-            <path d="M 1174.72 775.43 A 568 568 0 0 1 877.9 1134.58 L 755.99 886.97 A 292 292 0 0 0 908.57 702.33 Z"/>
+            <path d="M 1177 771 L 1025 806 L 1018 804 L 902 705 L 883 752 L 851 800 L 808 843 L 762 874 L 756 1023 L 885 1136 L 896 1131 L 947 1098 L 985 1068 L 1038 1017 L 1067 983 L 1106 928 L 1128 890 L 1157 828 Z" stroke-linejoin="round"/>
           </a>
           <a href="#stage-analyse" class="kb-cycle__image-hotspot" aria-label="Analyse: jump to Analyse guidance">
             <title>Analyse: jump to guidance</title>
-            <path d="M 850.89 1147.01 A 568 568 0 0 1 385.03 1138.88 L 502.61 889.18 A 292 292 0 0 0 742.1 893.36 Z"/>
+            <path d="M 375 982 L 382 1153 L 440 1177 L 484 1190 L 541 1201 L 603 1206 L 653 1205 L 718 1197 L 770 1185 L 818 1169 L 857 1152 L 725 1035 L 731 889 L 673 907 L 633 912 L 605 912 L 565 907 L 538 900 L 501 886 Z" stroke-linejoin="round"/>
           </a>
           <a href="#stage-preserve" class="kb-cycle__image-hotspot" aria-label="Preserve: jump to Preserve guidance">
             <title>Preserve: jump to guidance</title>
-            <path d="M 358.47 1125.51 A 568 568 0 0 1 74.36 756.22 L 342.9 692.46 A 292 292 0 0 0 488.95 882.31 Z"/>
+            <path d="M 182 659 L 62 755 L 80 813 L 100 862 L 131 921 L 159 964 L 191 1005 L 240 1056 L 264 1077 L 302 1106 L 350 1136 L 343 973 L 352 963 L 472 870 L 429 840 L 387 796 L 358 751 L 337 699 Z" stroke-linejoin="round"/>
           </a>
           <a href="#stage-share" class="kb-cycle__image-hotspot" aria-label="Share: jump to Share guidance">
             <title>Share: jump to guidance</title>
-            <path d="M 68.25 727.12 A 568 568 0 0 1 179.85 274.75 L 397.13 444.94 A 292 292 0 0 0 339.76 677.5 Z"/>
+            <path d="M 311 299 L 162 271 L 131 315 L 113 346 L 84 408 L 69 451 L 54 512 L 46 573 L 45 643 L 49 688 L 55 723 L 170 631 L 180 627 L 329 666 L 325 631 L 325 604 L 333 548 L 351 497 L 367 467 L 383 444 Z" stroke-linejoin="round"/>
           </a>
           <a href="#stage-reuse" class="kb-cycle__image-hotspot" aria-label="Reuse: jump to Reuse guidance">
             <title>Reuse: jump to guidance</title>
-            <path d="M 198.79 251.82 A 568 568 0 0 1 622.04 57.02 L 624.45 333.01 A 292 292 0 0 0 406.86 433.16 Z"/>
+            <path d="M 682 183 L 611 43 L 590 42 L 557 45 L 492 56 L 450 67 L 399 85 L 348 109 L 304 135 L 259 168 L 230 193 L 182 244 L 332 273 L 344 289 L 407 417 L 446 382 L 495 353 L 560 331 L 608 325 Z" stroke-linejoin="round"/>
           </a>
           <a href="#storage-across-stages" class="kb-cycle__image-hotspot" aria-label="Storage and Management: jump to cross-cutting storage guidance">
             <title>Storage and Management across all stages</title>
-            <circle cx="627" cy="625" r="282"/>
+            <circle cx="618" cy="616" r="275"/>
           </a>
         </svg>
         <figcaption>Choose a segment or use the accessible stage links alongside the figure.</figcaption>

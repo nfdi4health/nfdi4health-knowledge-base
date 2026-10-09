@@ -7,6 +7,7 @@ redirect_from:
   - /data-life-cycle/
 sidebar: data_management
 search_exclude: false
+contributors: [Atinkut A. Zeleke]
 ---
 
 <div class="kb-cycle">

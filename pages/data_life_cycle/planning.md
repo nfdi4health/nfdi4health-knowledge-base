@@ -154,17 +154,17 @@ The result should be an agreed, documented plan **before** the participating ins
 
 Use this checklist before data collection or a new data-access application starts:
 
-- [ ] A suitable NFDI4Health DMP template has been selected and a first draft prepared.
-- [ ] Study objectives, data sources, expected outputs and data types are described.
-- [ ] Responsibilities and contacts for data stewardship, security and approvals are recorded.
-- [ ] Appropriate ethical, legal and data protection review arrangements are identified.
-- [ ] Study metadata, identifiers, data dictionaries and terminology choices are planned.
-- [ ] Data collection, validation, processing and analysis workflows are documented.
-- [ ] Institutional storage, backup, encryption and access procedures are agreed.
-- [ ] Study discovery, secondary data access and possible federated analysis have been considered.
-- [ ] Sharing, publication, preservation, retention and deletion conditions are documented.
-- [ ] The required personnel, infrastructure and financial resources are budgeted.
-- [ ] A DMP owner and review milestones are assigned.
+- [ ] &nbsp;&nbsp;A suitable NFDI4Health DMP template has been selected and a first draft prepared.
+- [ ] &nbsp;&nbsp;Study objectives, data sources, expected outputs and data types are described.
+- [ ] &nbsp;&nbsp;Responsibilities and contacts for data stewardship, security and approvals are recorded.
+- [ ] &nbsp;&nbsp;Appropriate ethical, legal and data protection review arrangements are identified.
+- [ ] &nbsp;&nbsp;Study metadata, identifiers, data dictionaries and terminology choices are planned.
+- [ ] &nbsp;&nbsp;Data collection, validation, processing and analysis workflows are documented.
+- [ ] &nbsp;&nbsp;Institutional storage, backup, encryption and access procedures are agreed.
+- [ ] &nbsp;&nbsp;Study discovery, secondary data access and possible federated analysis have been considered.
+- [ ] &nbsp;&nbsp;Sharing, publication, preservation, retention and deletion conditions are documented.
+- [ ] &nbsp;&nbsp;The required personnel, infrastructure and financial resources are budgeted.
+- [ ] &nbsp;&nbsp;A DMP owner and review milestones are assigned.
 
 ## When should the DMP be updated?
 
@@ -181,6 +181,3 @@ Treat the DMP as a living record of project decisions. Useful review points incl
 
 **Next life-cycle stage:** [Collecting]({{ '/collecting' | relative_url }}) — implement the agreed collection procedures, protections and documentation practices.
 
----
-
-*Content and attribution:* This NFDI4Health-specific page was newly developed using NFDI4Health's public service and DMP guidance and training materials for *Biomedical Research Data Management with NFDI4Health Services* (September 2026). The life-cycle framework was inspired by [ELIXIR RDMkit](https://rdmkit.elixir-europe.org/planning). The source RDMkit page and its original contributors should remain acknowledged when documenting the site's adaptation history. Check service availability and institutional requirements before implementing a workflow.

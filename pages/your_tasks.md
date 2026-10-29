@@ -1,7 +1,16 @@
 ---
-title: Your tasks
+title:  How-to guides
 toc: false
 ---
+<div class="kb-notice" role="note">
+  ⚠️ <strong>Development notice:</strong>
+  This section is under development. The how-to guidance
+  currently presented here is sourced entirely from
+  <a href="https://rdmkit.elixir-europe.org/your_tasks">ELIXIR RDMkit</a>.
+  It will be reviewed and adapted to reflect the services,
+  workflows and research data management practices relevant
+  to NFDI4Health.
+</div>
 
 In this section, information is organised around regular research data management tasks or challenges. You will find:
 - Best practices and guidelines for each data management task.

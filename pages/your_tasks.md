@@ -2,7 +2,8 @@
 title:  How-to guides
 toc: false
 ---
-<div class="kb-notice" role="note">
+<div class="kb-notice" role="note"
+     style="max-width: none; margin: 1.5rem 0 2rem; padding: 1.25rem 1.5rem; font-size: 1rem; line-height: 1.7;">
   ⚠️ <strong>Development notice:</strong>
   This section is under development. The how-to guidance
   currently presented here is sourced entirely from
@@ -11,6 +12,7 @@ toc: false
   workflows and research data management practices relevant
   to NFDI4Health.
 </div>
+
 
 In this section, information is organised around regular research data management tasks or challenges. You will find:
 - Best practices and guidelines for each data management task.

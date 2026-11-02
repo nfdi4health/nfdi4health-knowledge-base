@@ -1,7 +1,7 @@
 ---
 title: Training Module Catalogue
 description: NFDI4Health self-paced learning modules, consortium training materials and selected external training resources.
-permalink: /Modules
+permalink: /modules
 sidebar: data_management
 toc: true
 search_exclude: false

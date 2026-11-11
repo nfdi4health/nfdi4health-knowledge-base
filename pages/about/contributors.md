@@ -1,4 +1,3 @@
-
 ---
 title: NFDI4Health Data Stewards
 permalink: /contributors

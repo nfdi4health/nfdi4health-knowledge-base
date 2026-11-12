@@ -1,18 +1,27 @@
+
 title: Contribute
 title_url: /how_to_contribute
 subitems:
-  - title: Contribute via GitHub
+  - title: Start contributing
+    url: /how_to_contribute
+  - title: Submit Word or Markdown
+    url: /submit_to_coordination
+  - title: Contribute with GitHub
     url: /github_way
-  - title: Add new tool or resource
-    url: /tool_resource_update
+  - title: Content standards
+    url: /content_standards
+  - title: Volunteer editorial team
+    url: /editorial_workflow
+  - title: Copyright and attribution
+    url: /copyright
   - title: Style guide
     url: /style_guide
-  - title: Copyright guidelines
-    url: /copyright
   - title: Markdown cheat sheet
     url: /markdown_cheat_sheet
   - title: Page metadata
     url: /page_metadata
+  - title: Add new tool or resource
+    url: /tool_resource_update
   - title: Code of Conduct
     url: /CODE_OF_CONDUCT
   - title: List of page IDs

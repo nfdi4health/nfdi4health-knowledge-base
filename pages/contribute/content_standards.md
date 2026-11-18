@@ -4,8 +4,6 @@ permalink: /content_standards
 sidebar: contribute
 ---
 
-# Standards for contributor content
-
 These proposed working standards support consistent NFDI4Health Knowledge Base pages. They complement the existing site style guide; the coordination team should approve them as project policy before describing them as mandatory consortium rules.
 
 ## Audience and writing

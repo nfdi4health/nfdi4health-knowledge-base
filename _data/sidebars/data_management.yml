@@ -21,7 +21,7 @@ subitems:
     url: /your_tasks
     image_url: /assets/img/section-icons/tick.svg
 
-   - title: Training Modules and Resources
+    - title: Training Modules and Resources
     description: Explore self-paced learning modules, NFDI4Health training materials and selected external learning resources.
     url: /modules
     image_url: /assets/img/section-icons/training-icon.svg

@@ -154,23 +154,19 @@ To link between Knowledge Base pages, use the Jekyll `relative_url` filter so li
 
 Do not place the GitHub Pages base path directly into each internal Markdown link. If a published permalink must change, discuss a redirect and verify both the previous and new URLs.
 
-## Inherited RDMkit metadata: review before reuse
+## Updating existing Knowledge Base pages
 
-The NFDI4Health repository was adapted from RDMkit. Some older pages and templates still contain its original metadata conventions.
+Some existing Knowledge Base pages contain technical metadata inherited from earlier development stages.
 
-| Inherited field or convention | Current guidance |
-| --- | --- |
-| `page_id` and `related_pages` | Still occur in some lifecycle and other inherited pages. Do not add RDMkit's `Your_tasks`, `Your_domain` or `Tool_assembly` relationships to new pages without a confirmed mapping to the NFDI4Health navigation. Preserve existing working links during migration. |
-| `training` entries pointing to TeSS or other RDMkit resources | Do not assume that these entries automatically populate NFDI4Health training modules. Link to verified training resources and use the agreed module workflow. |
-| `dsw`, `faircookbook` and `fairsharing` | Some inherited metadata reflects RDMkit-specific integrations. Their automated updates or availability must not be assumed for NFDI4Health. |
-| `ref_to_main_resources` and `national_resources` | Specific to older RDMkit resource-listing workflows; not part of the standard metadata for NFDI4Health service pages. |
-| `type`, `type_img` and `layout` | Theme and template fields that may be set automatically in `_config.yml` or retained for existing page layouts. Do not remove them from an established page without checking the rendering. |
-| `editors`, `coordinators`, `affiliations` and other legacy credit fields | Do not treat inherited lists as an approved NFDI4Health editorial or governance model. Use the confirmed contributor registry and follow the project's review process. |
+When updating an existing page:
 
-**Important:** This table is a migration warning, not a request to delete fields from existing pages. Some legacy fields remain necessary until pages, navigation and theme features have been systematically reviewed.
+- Preserve metadata fields that support the current page layout, navigation and internal links.
+- Do not remove unfamiliar metadata fields without consulting the Knowledge Base coordination team.
+- Use the current NFDI4Health metadata conventions when creating new pages.
+- Avoid copying outdated metadata fields into new content.
+- Check that the updated page renders correctly in the preview before publication.
 
-New NFDI4Health content should prioritise stable URLs, accurate contributor recognition, clear content structure, accessible links and verified references.
-
+The Knowledge Base metadata structure will continue to be standardised as development progresses.
 ## YAML editing and validation checklist
 
 Before submitting a Markdown page or pull request:

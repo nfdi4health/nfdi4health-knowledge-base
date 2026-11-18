@@ -4,8 +4,6 @@ permalink: /editorial_workflow
 sidebar: contribute
 ---
 
-# Volunteer editorial and review team
-
 NFDI4Health colleagues may volunteer to help maintain a clear, reliable Knowledge Base. The review team supports the coordination team; it does **not** automatically gain permission to publish to the website. The responsibilities and approval rules below are a **proposed operating model for confirmation** by the coordination team.
 
 ## Volunteer roles

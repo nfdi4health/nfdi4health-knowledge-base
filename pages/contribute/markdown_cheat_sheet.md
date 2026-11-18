@@ -20,26 +20,52 @@ For content requirements, consult the [NFDI4Health contribution standards]({{ '/
 The following examples demonstrate commonly used Markdown features. All contributions should follow the NFDI4Health Knowledge Base writing, accessibility, attribution and privacy requirements.
 
 
-## Titles
+## Headings
 
-Using:
-```
-## Title
+Headings organise Knowledge Base content and make it easier for readers to navigate a page.
+
+### Page titles
+
+The NFDI4Health Knowledge Base automatically generates the main page heading from the `title` field in the YAML front matter.
+
+For example:
+
+```yaml
+---
+title: NFDI4Health Research Data Life Cycle
+---
 ```
 
-### Sub titles
+**Important:** Do not repeat the page title using a Markdown `#` heading in the page body. Doing so can result in duplicate titles.
 
-Using:
-```
-### Sub titles
+### Section headings
+
+Use level-two headings (`##`) for main sections and level-three headings (`###`) for subsections.
+
+Example:
+
+```markdown
+## Purpose
+
+Explain why the service or guidance is relevant.
+
+## Typical use cases
+
+Describe practical applications in biomedical research.
+
+### Example: Clinical research
+
+Explain how researchers might use the service.
 ```
 
-#### Sub sub titles
+### Good practices
 
-Using:
-```
-#### Sub sub titles
-```
+- Use clear and descriptive headings.
+- Follow a logical heading hierarchy.
+- Do not skip heading levels unnecessarily.
+- Keep headings concise and meaningful.
+- Avoid using headings only to change text size.
+- Use the page's YAML `title` field for its main title.
 
 ## Bold text
 

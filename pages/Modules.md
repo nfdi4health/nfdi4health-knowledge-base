@@ -1,5 +1,5 @@
 ---
-title: Training Module Catalogue
+title: Training Modules and Resources
 description: NFDI4Health self-paced learning modules, consortium training materials and selected external training resources.
 permalink: /modules
 sidebar: data_management

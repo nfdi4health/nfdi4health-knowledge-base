@@ -5,9 +5,17 @@ contributors: [Bert Droesbeke]
 search_exclude: true
 ---
 
-We use Markdown files to manage the content on RDMkit in a structured and easy to edit way. For more information about Markdown, please check the [Markdown guidelines](https://guides.github.com/features/mastering-markdown/). If you want more information about the specific markdown flavor we use, Kramdown, please checkout the [Kramdown documentation](https://kramdown.gettalong.org/parser/kramdown.html).
+The NFDI4Health Knowledge Base uses Markdown to develop and maintain service descriptions, self-paced learning modules, and biomedical research data life-cycle guidance.
 
-Besides the syntax to describe the main content on which this page focuses, we also make use of metadata fields in the Markdown. If you want to know more about them and how they can unlock certain features on pages, please go to our [page metadata](page_metadata) page
+This cheat sheet provides practical Markdown formatting examples for contributors who wish to create or update Knowledge Base content through GitHub.
+
+**You do not need GitHub experience to contribute.** Contributors may also prepare content using the approved Word or Markdown templates and submit their materials to the coordination team. For further information, see the [How to Contribute]({{ '/how_to_contribute' | relative_url }}) page.
+
+When editing an existing page, preserve its YAML front matter, permalink and sidebar settings unless changes have been agreed with the coordination team.
+
+For content requirements, consult the [NFDI4Health contribution standards]({{ '/content_standards' | relative_url }}).
+
+The following examples demonstrate commonly used Markdown features. All contributions should follow the NFDI4Health Knowledge Base writing, accessibility, attribution and privacy requirements.
 
 
 ## Titles

@@ -123,53 +123,80 @@ This is done by using this snippet:
 ```
 {% endraw %}
 note can be replaced with tip, warning, important, depending on the type of message you want. 
-
 ## Images
 
-{% include image.html file="/infrastructures/ELIXIR-logo.svg" caption="Figure 1. Say something about this pic." alt="ELIXIR logo" %}
+Images can help explain biomedical research data management concepts, workflows, services and research data life-cycle stages.
 
-This image is inserted in the markdown using following snippet:
+Contributors should use images only when they improve understanding. All images must be accessible, appropriately licensed and suitable for public distribution.
+
+### Adding images using Markdown
+
+The standard Markdown syntax is:
+
+```md
+![Alternative text describing the image](path/to/image.png)
+```
+
+For example, a contributor documenting the biomedical research data life cycle could include a diagram showing the relationships between its stages.
+
+The image filename and path must correspond to an existing file in the repository.
+
+### Adding images using the Jekyll theme
+
+The NFDI4Health Knowledge Base uses the ELIXIR Toolkit Theme, which provides an image component supporting captions and accessibility information.
+
+An image can be inserted using the following syntax:
 
 {% raw %}
-```
-{% include image.html file="/infrastructures/ELIXIR-logo.svg" caption="Figure 1. Say something about this pic." alt="ELIXIR logo" max-width="10" %}
+```liquid
+{% include image.html
+   file="data_life_cycle/diagram.svg"
+   alt="Diagram illustrating the stages of the biomedical research data life cycle"
+   caption="Overview of the biomedical research data life cycle"
+%}
 ```
 {% endraw %}
 
-or a smaller image
+The filename above is illustrative. Replace it with the path to an actual image uploaded to the repository's `images` directory.
 
-{% include image.html file="infrastructures/ELIXIR-logo.svg" alt="ELIXIR logo" max-width="3em" %}
+Useful attributes include:
 
-This image is inserted in the markdown using following snippet:
+- `file`: Path to the image within the image directory.
+- `alt`: Meaningful text describing the image for people using screen readers.
+- `caption`: A visible description explaining the image.
+- `max-width`: Maximum displayed image width, when appropriate.
+- `click`: Allows the image to be opened separately when supported by the theme.
 
-{% raw %}
-```
-{% include image.html file="infrastructures/ELIXIR-logo.svg" alt="ELIXIR logo" max-width="3em" %}
-```
-{% endraw %}
+### Image accessibility
 
-Make sure that you add the image to the `images` directory and give it an understandable filename. Adapt the snippet so it points towards your image (only the filename is needed). In the case of the example, the image exampleImage.png is loaded. Supported attributes are:
+When preparing images:
 
-* `click`: if true, the image will be clickable -> the image will be loaded in another tab
-* `url`: f you want the image to link to anther page
-* `alt`: describes the image and is used for people that are visually impaired
-* `caption`: Text that will appear under the image
-* `inline`: if true this image can be used in a list
-* `max-width`: Max width in px or em
+- Provide meaningful alternative text describing the information conveyed.
+- Explain complex diagrams in the surrounding text.
+- Ensure that text remains readable when images are resized.
+- Use sufficient colour contrast.
+- Do not communicate important information through colour alone.
+- Avoid embedding long paragraphs of text inside images.
 
+### Copyright and attribution
 
-or using following markdown syntax:
-{% raw %}
-```
-![ELIXIR logo](/images/infrastructures/ELIXIR-logo.svg)
-![ELIXIR logo](/images/infrastructures/ELIXIR-logo.svg){: height="200px" width="200px"}
-```
-{% endraw %}
+Contributors must provide the following information for each submitted image:
 
-gives:
+1. Image title or description.
+2. Creator or copyright holder.
+3. Original source or URL.
+4. Licence and required attribution.
+5. Any modifications made to the original image.
 
-![ELIXIR logo](/images/infrastructures/ELIXIR-logo.svg)
-![ELIXIR logo](/images/infrastructures/ELIXIR-logo.svg){: height="200px" width="200px"}
+Use original diagrams, appropriately licensed material or images for which publication permission has been obtained.
+
+### Privacy and sensitive health data
+
+Do not upload images containing identifiable patient information, confidential research data, institutional credentials or restricted screenshots.
+
+For biomedical examples, prefer fictional or synthetic data unless the necessary permissions and legal approvals have been confirmed.
+
+For additional requirements, consult the [NFDI4Health contribution standards]({{ '/content_standards' | relative_url }}) and [copyright and attribution guidelines]({{ '/copyright' | relative_url }}).
 
 
 

@@ -228,25 +228,73 @@ Here's what they render to:
 
 ## Links
 
-### Create an external link
+Links connect NFDI4Health Knowledge Base pages with relevant services, learning modules, research data life-cycle guidance and authoritative external resources.
 
-When linking to an external site, use:
+Use descriptive link text so readers understand where a link leads.
 
-```md
-[Google](http://google.com)
-```
+### External links
 
+External links connect readers to websites outside the Knowledge Base.
 
-### Linking to internal pages
-
-When linking to internal pages, you can manually link to the pages like this:
+For example:
 
 ```md
-[Planning](planning)
+[NFDI4Health official website](https://www.nfdi4health.de/)
 ```
-Will link to the planning page.
 
-If you change the file name, you'll have to update all of your links.
+**Result:**
+
+[NFDI4Health official website](https://www.nfdi4health.de/)
+
+When adding external links:
+
+- Prefer official NFDI4Health service websites and authoritative sources.
+- Verify that the destination is correct and accessible.
+- Use HTTPS whenever available.
+- Avoid linking to outdated, restricted or unreliable resources.
+- Provide references for scientific and technical claims.
+
+### Internal Knowledge Base links
+
+Internal links connect related pages within the NFDI4Health Knowledge Base.
+
+Because the Knowledge Base is deployed through GitHub Pages and Netlify, internal links should use Jekyll's `relative_url` filter.
+
+For example:
+
+{% raw %}
+```liquid
+[Research Data Life Cycle]({{ '/data_life_cycle' | relative_url }})
+```
+{% endraw %}
+
+**Result:**
+
+[Research Data Life Cycle]({{ '/data_life_cycle' | relative_url }})
+
+This approach helps internal links work correctly across different deployment environments.
+
+### Linking related Knowledge Base content
+
+Where relevant, connect a page to:
+
+- Related NFDI4Health services.
+- Relevant research data life-cycle stages.
+- Self-paced learning modules.
+- Practical how-to guides.
+- Guidance for specific user roles.
+
+For example, a service description may link to the relevant research data life-cycle stage and an associated learning module.
+
+### Good practices for links
+
+- Use meaningful link descriptions instead of phrases such as "click here".
+- Check that internal links point to existing Knowledge Base pages.
+- Avoid unnecessary duplication of information across pages.
+- Review external links periodically.
+- Do not link to confidential documents or restricted information without appropriate authorisation.
+
+For additional guidance, consult the [NFDI4Health contribution standards]({{ '/content_standards' | relative_url }}).
 
 ## Emoji's
 

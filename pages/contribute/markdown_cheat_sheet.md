@@ -480,56 +480,81 @@ Source: [NFDI4Health contribution standards]({{ '/content_standards' | relative_
 - Do not reproduce confidential documents or restricted information.
 
 For longer passages, consider summarising the relevant guidance and linking to the original source instead of reproducing extensive text.
+## Collapsible guidance
 
+Collapsible sections allow readers to expand additional information without displaying it permanently on the page.
 
-## A collapsible piece of text
+They can be useful for supplementary explanations, examples and frequently asked questions.
+
+### Example: Preparing a service description
+
+The following example creates an expandable checklist.
 
 <details>
-  <summary>Click to expand!</summary>
-<ol>
-Text
-</ol>
+  <summary>What should I check before submitting a service description?</summary>
+  <ul>
+    <li>Confirm the current service name, status and official URL.</li>
+    <li>Describe the intended users and access conditions.</li>
+    <li>Identify relevant FAIR and research data life-cycle activities.</li>
+    <li>Provide references and a responsible content steward.</li>
+  </ul>
 </details>
-<br>
-Is made with this code snippet:
+
+### HTML syntax
 
 ```html
 <details>
-  <summary>Click to expand!</summary>
-<ol>
-Text
-</ol>
+  <summary>What should I check before submitting a service description?</summary>
+  <ul>
+    <li>Confirm the current service name, status and official URL.</li>
+    <li>Describe the intended users and access conditions.</li>
+    <li>Identify relevant FAIR and research data life-cycle activities.</li>
+    <li>Provide references and a responsible content steward.</li>
+  </ul>
 </details>
 ```
 
+### Recommendations
 
-## Enforce space between two lines
+- Use clear and informative summary text.
+- Keep essential instructions visible in the main page content.
+- Use collapsible sections primarily for supplementary information.
+- Do not hide important privacy warnings or access restrictions inside collapsed sections.
+- Check that the content remains accessible using a keyboard.
 
-To have space between two lines of text, simply leave one empty line in between the line in the markdown. If more is needed, you can force this with:
+## Paragraphs and line breaks
 
+Markdown provides simple ways to organise text into readable paragraphs.
+
+### Creating paragraphs
+
+Leave one empty line between paragraphs.
+
+For example:
 
 ```md
-<br>
+The first paragraph introduces the research data management topic.
+
+The second paragraph provides additional guidance or recommendations.
 ```
 
-## Enforce line break
+This creates two separate paragraphs.
 
-When you want to have a line of text.\\
-And another line underneath it without space, use:
+### Creating a line break
+
+For a line break without starting a new paragraph, an HTML `<br>` element can be used when necessary.
+
+Example:
 
 ```md
-When you want to have a line of text.\\
-And another line underneath it without space, use:
+First line of text.<br>
+Second line of text.
 ```
 
-Without these backslashes
+### Recommendations
 
-```
-When you want to have a line of text.
-And another line underneath it without space, use:
-```
-
-looks like this:
-
-When you want to have a line of text.
-And another line underneath it without space, use:
+- Prefer ordinary paragraphs rather than manually inserting multiple line breaks.
+- Use headings and lists to organise longer content.
+- Avoid excessive blank spaces and unnecessary HTML formatting.
+- Keep text readable on desktop and mobile devices.
+- Allow the Knowledge Base theme to control spacing and layout wherever possible.

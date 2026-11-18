@@ -326,11 +326,6 @@ For example, a service description may link to the relevant research data life-c
 
 For additional guidance, consult the [NFDI4Health contribution standards]({{ '/content_standards' | relative_url }}).
 
-## Emoji's
-
-Use GitHub emoticons! This [github page about emoticons](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md) has a cheat sheet for all the emoticons.
-:+1: is made with `:+1:`
-
 ## Code blocks and YAML examples
 
 Code blocks are used to display Markdown syntax, YAML metadata and other technical examples without interpreting them as ordinary page content.

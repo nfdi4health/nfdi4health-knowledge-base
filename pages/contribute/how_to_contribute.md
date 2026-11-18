@@ -5,8 +5,6 @@ permalink: /how_to_contribute
 sidebar: contribute
 ---
 
-# Contribute to the NFDI4Health Knowledge Base
-
 The NFDI4Health Knowledge Base is developed collaboratively by data stewards, service owners and other subject experts. We especially invite colleagues responsible for **NFDI4Health services**, **self-paced learning modules**, and **biomedical research data life-cycle guidance** to contribute or maintain relevant pages.
 
 **You do not need GitHub experience to contribute.** Choose the route that suits you:

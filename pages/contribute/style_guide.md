@@ -1,3 +1,9 @@
+---
+title: Style guide
+permalink: /style_guide
+sidebar: contribute
+---
+
 ## Graphic design
   * **White space:** make sure there is plenty of space so that the main elements stand out and the text does not appear overwhelming.
   * **Colours:** the headings, links, and text automatically appear in the right colour when you use the site templates. Use only the palette below in custom content and illustrations.

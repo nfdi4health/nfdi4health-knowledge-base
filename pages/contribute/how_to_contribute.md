@@ -21,13 +21,11 @@ The NFDI4Health Knowledge Base is developed collaboratively by data stewards, se
 
 The templates guide the content, but you may submit partial drafts. The [Module Authoring Template V001]({{ '/assets/contribution-templates/NFDI4Health_Module_Authoring_Template_V001.docx' | relative_url }}) is the **data-steward-agreed** structure for new self-paced modules (sections 0–15).
 
-| Content | Word template | Markdown template | Reference example |
-| --- | --- | --- | --- |
-| **Service description** | [Word]({{ '/assets/contribution-templates/NFDI4Health_Service_Content_Template.docx' | relative_url }}) | [Markdown]({{ '/assets/contribution-templates/nfdi4health-service-template.md' | relative_url }}) | [Health Study Hub Word source]({{ '/assets/contribution-examples/EXACT_Service_Health_Study_Hub.docx' | relative_url }}) and [original Markdown](https://github.com/nfdi4health/nfdi4health-knowledge-base/blob/3f4025bc5171f13c9d07d789957d3d5d530f17d8/pages/tool_assembly/health_study_hub.md) |
-| **Self-paced learning module** | [Agreed V001 Word]({{ '/assets/contribution-templates/NFDI4Health_Module_Authoring_Template_V001.docx' | relative_url }}) | [Agreed V001 Markdown]({{ '/assets/contribution-templates/NFDI4Health_Module_Authoring_Template_V001.md' | relative_url }}) | [FAIR module V001 mapping (Word)]({{ '/assets/contribution-examples/EXAMPLE_FAIR_Module_Agreed_V001_SOURCE_FAITHFUL.docx' | relative_url }}) / [Markdown]({{ '/assets/contribution-examples/EXAMPLE_FAIR_Module_Agreed_V001_SOURCE_FAITHFUL.md' | relative_url }}) |
-| **Research data life-cycle guidance** | [Word]({{ '/assets/contribution-templates/NFDI4Health_Lifecycle_Guidance_Template.docx' | relative_url }}) | [Markdown]({{ '/assets/contribution-templates/nfdi4health-lifecycle-template.md' | relative_url }}) | [Sharing Word source]({{ '/assets/contribution-examples/EXACT_Lifecycle_Sharing.docx' | relative_url }}) and [original Markdown](https://github.com/nfdi4health/nfdi4health-knowledge-base/blob/3f4025bc5171f13c9d07d789957d3d5d530f17d8/pages/data_life_cycle/sharing.md) |
-
-**About the examples:** The Health Study Hub and Sharing files reproduce existing source pages, not a simplified adaptation. The FAIR module is a **source-faithful mapping of an in-preparation catalogue entry**, not a finished module; missing parts are explicitly labelled. The published [Module Catalogue]({{ '/modules' | relative_url }}) is itself a catalogue rather than a complete course.
+| Content | Word template | Markdown template |
+| --- | --- | --- |
+| **Service description** | [Word]({{ '/assets/contribution-templates/NFDI4Health_Service_Content_Template.docx' | relative_url }}) | [Markdown]({{ '/assets/contribution-templates/nfdi4health-service-template.md' | relative_url }}) |
+| **Self-paced learning module** | [Agreed V001 Word]({{ '/assets/contribution-templates/NFDI4Health_Module_Authoring_Template_V001.docx' | relative_url }}) | [Agreed V001 Markdown]({{ '/assets/contribution-templates/NFDI4Health_Module_Authoring_Template_V001.md' | relative_url }}) |
+| **Research data life-cycle guidance** | [Word]({{ '/assets/contribution-templates/NFDI4Health_Lifecycle_Guidance_Template.docx' | relative_url }}) | [Markdown]({{ '/assets/contribution-templates/nfdi4health-lifecycle-template.md' | relative_url }}) |
 
 ## 2. Submit your contribution
 

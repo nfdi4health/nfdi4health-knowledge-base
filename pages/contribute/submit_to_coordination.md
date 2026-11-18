@@ -20,11 +20,11 @@ You may supply a `.docx` with tracked changes or comments, or a `.md` file. If y
 
 ## Step 3 — Submit to the coordination team
 
-Send the editable files through the team's **approved internal submission channel**. The coordination team must insert the agreed contact address/channel before this page is published. For requests visible to the community, you may alternatively open a [GitHub Issue](https://github.com/nfdi4health/nfdi4health-knowledge-base/issues/new/choose) describing the proposed page, without uploading non-public documents.
+Send your completed Word or Markdown document and supporting materials to **Dr Atinkut A. Zeleke (NFDI4Health Data Steward and Training Coordinator)** at [zeleke@ub.uni-koeln.de](mailto:zeleke@ub.uni-koeln.de).
 
-Suggested message subject: **Knowledge Base contribution — [Service / Module / Life cycle] — [topic]**.
+Include relevant references, source information, and any applicable image credits or licensing details. Do not include identifiable health data, confidential documents, or restricted information.
 
-Provide: contributor name, team, topic, new/update status, a source URL, source/licence details and an answer to whether the steward can review subsequent changes.
+For general questions or suggestions that can be shared publicly, you may alternatively open a [GitHub Issue](https://github.com/nfdi4health/nfdi4health-knowledge-base/issues/new/choose). Do not attach non-public documents to public GitHub Issues.
 
 ## Step 4 — Review and revision
 

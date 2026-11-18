@@ -4,8 +4,6 @@ permalink: /copyright
 sidebar: contribute
 ---
 
-# Copyright and attribution
-
 Please contribute original wording or material you have the right to publish. When referring to an external resource, cite and link it; do not assume that material found online is freely reusable.
 
 ## Text and quotations

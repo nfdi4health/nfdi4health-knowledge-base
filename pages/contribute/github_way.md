@@ -4,8 +4,6 @@ permalink: /github_way
 sidebar: contribute
 ---
 
-# Contribute using GitHub
-
 Use this route if you are comfortable editing Markdown in a browser or working with Git locally. GitHub lets reviewers discuss a proposed change before it becomes public on the Knowledge Base website.
 
 ## Before editing

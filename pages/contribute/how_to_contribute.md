@@ -33,7 +33,7 @@ The templates guide the content, but you may submit partial drafts. The [Module 
 
 1. Select the relevant template and complete the sections you can already provide.
 2. Identify the subject expert / proposed content steward, institutional affiliation, applicable service, and references. Indicate whether attribution details may be published.
-3. Send the editable file, image/source credits, and any supporting links using the **designated NFDI4Health Knowledge Base coordination channel**. **[Coordination team: insert an approved submission address or internal channel before publishing this page.]**
+3. **Submit your contribution:** Email your completed Word or Markdown document, together with relevant references and supporting materials, to **Dr Atinkut A. Zeleke (NFDI4Health Data Steward and Training Coordinator)** at [zeleke@ub.uni-koeln.de](mailto:zeleke@ub.uni-koeln.de).
 4. The coordination team acknowledges and logs the submission, asks for any missing essentials, arranges subject and editorial review, and converts the approved version into a GitHub pull request.
 5. Review any substantive changes requested by the reviewers. An authorised maintainer publishes after checks are complete.
 

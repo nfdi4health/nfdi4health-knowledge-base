@@ -21,12 +21,7 @@ subitems:
     url: /your_tasks
     image_url: /assets/img/section-icons/tick.svg
 
-  - title: Module catalogue
-    description: Structured learning modules for asynchronous training and reuse in synchronous courses.
+   - title: Training Modules and Resources
+    description: Explore self-paced learning modules, NFDI4Health training materials and selected external learning resources.
     url: /modules
-    image_url: /assets/img/section-icons/training-icon.svg
-
-  - title: Training resources
-    description: Training materials, tutorials, exercises, and reusable resources for NFDI4Health training activities.
-    url: /all_training_resources
     image_url: /assets/img/section-icons/training-icon.svg

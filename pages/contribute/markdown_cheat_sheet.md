@@ -105,24 +105,54 @@ The following Markdown code creates a simple table:
 - Do not use tables solely for visual page layout.
 ## Message boxes
 
-Change the content attribute in the code snippet to change the text in the message box
+Message boxes, also called callouts, highlight important information within NFDI4Health Knowledge Base pages.
 
-{% include callout.html type="note" content="This is my note." %}
+The Knowledge Base theme provides four types of callouts.
 
-{% include callout.html type="tip" content="This is my tip." %}
+### Note
 
-{% include callout.html type="warning" content="This is my warning." %}
+Use notes to provide additional information.
 
-{% include callout.html type="important" content="This is my important info." %}
+{% include callout.html type="note" content="Use the appropriate NFDI4Health content template when preparing a new contribution." %}
 
+### Tip
 
-This is done by using this snippet:
+Use tips to provide practical recommendations.
+
+{% include callout.html type="tip" content="Link to current NFDI4Health service documentation and include relevant references." %}
+
+### Warning
+
+Use warnings to highlight potential risks.
+
+{% include callout.html type="warning" content="Never upload identifiable personal health data, confidential research information or institutional credentials to a public repository." %}
+
+### Important
+
+Use important callouts to highlight essential requirements.
+
+{% include callout.html type="important" content="Content must undergo the applicable editorial and subject review before publication by an authorised maintainer." %}
+
+### Markdown syntax
+
+Callouts are inserted using the following Jekyll syntax:
+
 {% raw %}
-```
-{% include callout.html type="note" content="This is my note." %}
+```liquid
+{% include callout.html type="warning" content="Do not include identifiable health data." %}
 ```
 {% endraw %}
-note can be replaced with tip, warning, important, depending on the type of message you want. 
+
+Replace `warning` with `note`, `tip` or `important` according to the intended purpose.
+
+### Recommendations
+
+- Use callouts only when information requires particular attention.
+- Keep messages short and specific.
+- Avoid placing several callouts directly after one another in ordinary guidance pages.
+- Do not use callouts as substitutes for clear explanations.
+- Ensure that important information is understandable without relying solely on colour.
+
 ## Images
 
 Images can help explain biomedical research data management concepts, workflows, services and research data life-cycle stages.

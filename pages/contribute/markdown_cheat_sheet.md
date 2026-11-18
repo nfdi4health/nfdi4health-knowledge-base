@@ -19,7 +19,6 @@ For content requirements, consult the [NFDI4Health contribution standards]({{ '/
 
 The following examples demonstrate commonly used Markdown features. All contributions should follow the NFDI4Health Knowledge Base writing, accessibility, attribution and privacy requirements.
 
-
 ## Headings
 
 Headings organise Knowledge Base content and make it easier for readers to navigate a page.
@@ -69,33 +68,59 @@ Explain how researchers might use the service.
 
 ## Bold text
 
-**Bold** text
+Use bold text to emphasise an essential action or requirement. Keep the emphasis brief so that it remains meaningful.
 
-Using:
-```
-**Bold** text
+**Rendered example:** **Do not upload identifiable patient data** to a public repository.
+
+Markdown syntax:
+
+```md
+**Do not upload identifiable patient data**
 ```
 
-Make sure there are no spaces between the asterisks and the text you want to put in bold.
+Use a proper heading, rather than bold text, to introduce a new section.
 
 ## Italic text
 
-*Italic* text
+Use italics sparingly to emphasise a short term or phrase.
 
-Using:
-```
-*Italic* text
-```
+**Rendered example:** The *data steward* checks the documentation before publication.
 
-Make sure there are no spaces between the asterisks and the text you want to put in italic.
-
-## File names/ files / software names
-
-`Text` can be highlighted using:
+Markdown syntax:
 
 ```md
-`Text`
+The *data steward* checks the documentation before publication.
 ```
+
+Do not rely on italics alone to communicate important requirements.
+
+## Inline code, filenames and configuration fields
+
+Use single backticks around exact filenames, repository paths, configuration fields and short pieces of code.
+
+### Examples from the NFDI4Health Knowledge Base
+
+- `pages/data_life_cycle.md` — Markdown source file for the research data life-cycle overview.
+- `pages/contribute/markdown_cheat_sheet.md` — Source file for this guide.
+- `_data/nfdi4health_data_stewards.yml` — Data file containing information about NFDI4Health data stewards.
+- `title` — YAML front matter field defining a page's title.
+- `permalink` — YAML front matter field specifying a page's URL.
+- `contributors` — YAML front matter field identifying registered page contributors.
+
+### Markdown syntax
+
+```md
+Edit `pages/data_life_cycle.md` to update the research data life-cycle guidance.
+
+The `permalink` field defines the public page URL.
+```
+
+### Good practices
+
+- Use inline code for exact filenames, paths and technical field names.
+- Preserve the spelling and capitalisation of repository paths.
+- Use descriptive hyperlinks when directing readers to another Knowledge Base page.
+- Never include passwords, access tokens, identifiable patient information or confidential research data in code examples.
 
 ## Tables
 
@@ -131,6 +156,7 @@ The following Markdown code creates a simple table:
 - Ensure that tables remain readable on mobile devices.
 - Provide references for scientific or technical claims.
 - Do not use tables solely for visual page layout.
+
 ## Message boxes
 
 Message boxes, also called callouts, highlight important information within NFDI4Health Knowledge Base pages.
@@ -255,8 +281,6 @@ Do not upload images containing identifiable patient information, confidential r
 For biomedical examples, prefer fictional or synthetic data unless the necessary permissions and legal approvals have been confirmed.
 
 For additional requirements, consult the [NFDI4Health contribution standards]({{ '/content_standards' | relative_url }}) and [copyright and attribution guidelines]({{ '/copyright' | relative_url }}).
-
-
 
 ## Icons
 
@@ -577,7 +601,7 @@ Second line of text.
 - Keep text readable on desktop and mobile devices.
 - Allow the Knowledge Base theme to control spacing and layout wherever possible.
 
-  ## Source and attribution
+## Source and attribution
 
 This guide is adapted from the [RDMkit Markdown cheat sheet](https://rdmkit.elixir-europe.org/markdown_cheat_sheet), originally credited to Bert Droesbeke.
 

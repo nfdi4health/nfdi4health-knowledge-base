@@ -1,81 +1,113 @@
 ---
-title: Add new tool or resource
+title: Submit a service or resource
+description: Propose or update NFDI4Health service information and suggest relevant external resources for the Knowledge Base.
+permalink: /tool_resource_update
+sidebar: contribute
+search_exclude: false
+contributors:
+  - Atinkut A. Zeleke
 ---
 
-## Way of working
+The NFDI4Health Knowledge Base brings together practical guidance on services, research data management and learning resources for clinical, epidemiological and public health research. **Service owners, data stewards and subject experts** can help keep this information accurate and useful.
 
-You will find a "Tools and resources on this page" section at the bottom of most pages. The entries of this section are a subset of the [All tools and resources](all_tools_and_resources) table. The appearance of a tool or resource in this subset is solely determined by the fact that it is mentioned in the content of that page using the syntax described below.
+This guide explains how to propose a **new NFDI4Health service page**, **update an existing page**, or **recommend an external tool or resource**. A recommendation does not automatically become an official NFDI4Health service or a published Knowledge Base entry.
 
-The [All tools and resources](all_tools_and_resources) table is described in a central YAML file, [tool_and_resource_list.yml](https://github.com/elixir-europe/rdmkit/blob/master/_data/tool_and_resource_list.yml), in the `_data` directory. Tools and resources can be manually linked to [FAIRsharing.org](https://fairsharing.org/), [bio.tools](https://bio.tools) and [TeSS](https://tess.elixir-europe.org/). We also run a fully automatic weekly check that links tools and resources with the corresponding registries. A GitHub Bot will open a Pull Request (PR) when new links are found.
+## 1. Choose the type of contribution
 
-{% include callout.html type="important" content="Possible links between a tool or resource and registries such as FAIRsharing, TeSS, or bio.tools are automatically identified using GitHub Actions on a weekly basis. If the automatically proposed link is not relevant, and there is no other FAIRsharing ID, bio.tools ID, or TeSS query available for the source, you can overwrite the automatic linking by adding `NA` as the value of a registry field." %}
+| Contribution | When to use it | What to prepare |
+| --- | --- | --- |
+| **New NFDI4Health service page** | A service is confirmed as part of the NFDI4Health service portfolio but is not yet described in the Knowledge Base. | Official service information, a responsible service owner or content steward, and the appropriate service template. |
+| **Update an existing service page** | A service's features, access conditions, documentation, support contact or status have changed; or an existing description needs correction. | The existing Knowledge Base page URL, the proposed changes and sources that verify them. |
+| **Suggest an external tool or resource** | A third-party tool, standard, repository, publication or training resource could help users carry out a relevant biomedical RDM task. | Its official URL, purpose, relevance, maintainer, supporting evidence and any usage or licensing constraints. Clearly identify it as external. |
 
+For a **new self-paced learning module** or **research data life-cycle guidance**, use the corresponding template on the [main contribution page]({{ '/how_to_contribute' | relative_url }}) instead. An external resource may be linked from an existing page without requiring a separate service page.
 
-## When can you add a new tool or resource
+## 2. Check the existing content first
 
-Tools and resources mentioned in the text of the pages should be included in the main table. However, not everything qualifies as a tool or resource in the context of RDMkit. Specifically, the following are **not** considered tools or resources:  
-- **Publications**: Articles, white papers, or other academic literature. See our [style guide](https://rdmkit.elixir-europe.org/style_guide#bibliography) on adding publications to a bibliography.
-- **Policies**: Guidelines, mandates, or institutional frameworks.  
-- **Webpages of groups or consortia**: Informational pages or organisational websites without a dedicated tool or service.
+1. Browse the [NFDI4Health Services overview]({{ '/services' | relative_url }}) and related [research data life-cycle guidance]({{ '/data_life_cycle' | relative_url }}).
+2. Check whether the service or resource is already described or linked. If so, propose an **update** rather than a duplicate page.
+3. For an NFDI4Health service, confirm the **official service name, URL, current status and responsible team** against an authoritative source, such as the [NFDI4Health service overview](https://www.nfdi4health.de/en/service.html) and the service's own documentation.
+4. If a service is planned, in a pilot phase, restricted to particular users or not yet available, state that clearly. **Do not describe planned capabilities as operational features.**
+5. Confirm with the relevant service owner or content steward who can check the facts and help maintain the entry.
 
-Additionally, it is important to note that we do not distinguish between tools and resources; these terms are used interchangeably throughout RDMkit.
+If you are uncertain whether a proposal belongs in the Knowledge Base, [contact the coordination team]({{ '/submit_to_coordination' | relative_url }}) before preparing a complete page.
 
-Tool and resource mentions are allowed only in the following sections:  
-- **Your domain**  
-- **Your role**  
-- **Your tasks**  
-- **Tool assembly**  
+## 3. Prepare the information
 
-If your contribution aligns with these criteria, follow the steps outlined below to add your entries to the main YAML file.
+For a **new NFDI4Health service page**, use the existing [Word service template]({{ '/assets/contribution-templates/NFDI4Health_Service_Content_Template.docx' | relative_url }}) or [Markdown service template]({{ '/assets/contribution-templates/nfdi4health-service-template.md' | relative_url }}). Both are available through the [main contribution page]({{ '/how_to_contribute' | relative_url }}).
 
-## The main YAML file
+Provide the following information where applicable:
 
-Each tool or resource mentioned in the text has metadata stored in the [main YAML file](https://github.com/elixir-europe/rdmkit/blob/master/_data/tool_and_resource_list.yml). The metadata block for each tool consists of 5 attributes:
-- **id**: The ID of a tool, in kebab-case, lowercase with hyphens.
-- **name**: the name of the tool or resource
-- **url**: URL to the main page of the tool or resource, make sure to let the URL start with `https://`
-- **description**: A short description of the tool or resource. Try to not use the characters `"` or `'` 
-- **registry**: 3 registries are supported: [Bio.tools](https://bio.tools), [FAIRsharing.org](https://fairsharing.org/) and [TeSS](https://tess.elixir-europe.org/). The keywords you can use respectively are: `biotools`, `fairsharing`, `fairsharing-coll` and `tess`, specifying the id or query with a colon. For FAIRsharing, copy the alphanumeric characters after "FAIRsharing." in the DOI. FAIRsharing collections are not associated with a DOI but use a four-digit ID well-visible on the page. List registries under the `registry` attribute as `key: value pairs`. If no FAIRsharing ID, bio.tools ID or TeSS query is available for a source, you can overwrite the automatic linking by adding 'NA' as a registry.
+| Information | What to include |
+| --- | --- |
+| **Service or resource identity** | Official name, verified URL, short description and responsible organisation or team. |
+| **Audience and purpose** | Who should use it, the biomedical RDM task it supports and a realistic example without identifiable participant data. |
+| **Current status and access** | Whether the service is operational, a pilot or planned (if confirmed); eligibility, access restrictions, necessary approvals and support route. |
+| **Functions and limitations** | What users can do, what they cannot do, known constraints and any dependencies. |
+| **FAIR and life-cycle relevance** | Explain how it supports relevant FAIR principles and stages such as planning, collection, processing, analysis, preservation, sharing or reuse. |
+| **Data protection context** | Distinguish publicly discoverable metadata from access to controlled or sensitive individual-level health data. Avoid unsupported legal or compliance claims. |
+| **Evidence and attribution** | Official documentation, specifications, relevant references, dates or versions, and permissions or licences for any reused material. |
+| **Content responsibility** | Proposed content steward or service owner, their affiliation, and any preferred publicly shareable contact or correction route. |
 
-Example:
+For an **existing page**, provide its URL, identify the sections to change and explain the reason for the update. For an **external resource**, a concise description with verified links may be sufficient; the coordination team can decide with subject reviewers whether it belongs on an existing guidance page or merits further treatment.
 
-```yml
-- id: github
-  name: GitHub
-  url: https://github.com
-  description:
-    Versioning system, used for sharing code, as well as for sharing of
-    small data
-  registry:
-    tess: GitHub
-    fairsharing: c55d5e
-```
+**Important:** Do not upload participant-level health data, identifying patient examples, credentials, confidential service documents or restricted attachments to GitHub or public submission channels. Include images or screenshots only when you have the necessary reuse rights and have removed sensitive information.
 
-## Linking the tool or resource in the text with the main YAML file
+## 4. Submit the contribution
 
-1. Make sure the tool you want to add is not already listed in the [YAML file](https://github.com/elixir-europe/rdmkit/blob/master/_data/tool_and_resource_list.yml). If so, go to step 3, if not, follow the next step.
+You can contribute without a GitHub account. Choose either route:
 
-1. Click on the pencil icon seen on GitHub of the [main YAML file](https://github.com/elixir-europe/rdmkit/blob/master/_data/tool_and_resource_list.yml) as described in our GitHub Guide. Add your tool or resource at the bottom of the file following the structure described in the [The main YAML file section of this page](#the-main-YAML-file). Make sure the indentation follows one of the previously listed items. In case of doubt, copy the content of the YAML file and paste it into an online YAML validator to check the format.
+### Route A — Submit Word or Markdown to the coordination team
 
-1. Copy the `tool_id` of the tool or resource
+1. Fill in the relevant service template, or prepare a concise update or external-resource suggestion.
+2. Include authoritative links and the person or team who can verify the information.
+3. Send the material to the coordination team using the [Word or Markdown submission instructions]({{ '/submit_to_coordination' | relative_url }}).
+4. Respond to any questions or proposed revisions during the review.
 
-1. Add the right context on RDMkit for the tool by mentioning it somewhere in the text using the following syntax:
-  
-  ```
-  {% raw %}
-  {% tool "tool_id" %}
-  {% endraw %}
-  ```
+The coordination team can prepare the technical website update, while the service owner or named content steward remains responsible for verifying specialist information. **Submission is not automatic approval or publication.**
 
-  {% include callout.html type="important" content="Don't forget to add the `\"` double quotes around the tool_id and make sure to use the exact tool_id as described in the YAML file." %}
+### Route B — Contribute through GitHub
 
-  Example:
+1. For a substantial new page, first open a [GitHub Issue](https://github.com/nfdi4health/nfdi4health-knowledge-base/issues/new/choose) to agree on scope, ownership and location.
+2. Edit the appropriate Markdown page on a **new branch or fork**, using the service template when creating a new service page. Do **not** commit directly to `main`.
+3. Open a [pull request](https://github.com/nfdi4health/nfdi4health-knowledge-base/pulls) describing the change, the evidence and the proposed content steward.
+4. Address reviewer comments. An authorised repository maintainer handles the final merge after the applicable checks.
 
-  ```
-  {% raw %}
-  {% tool "zenodo" %} is a powerful data publication service, which is supported by the European Commission and focused on research data, including supplemental material like software, tables, figures or slides.
-  {% endraw %}
-  ```
-  Will give: 
-  
-  {% tool "zenodo" %} is a powerful data publication service, which is supported by the European Commission and focused on research data, including supplemental material like software, tables, figures or slides.
+See [Contribute using GitHub]({{ '/github_way' | relative_url }}) for detailed instructions.
+
+## 5. Review, publication and maintenance
+
+The proposed Knowledge Base editorial workflow involves these checks:
+
+1. **Scope and ownership:** Is the contribution relevant to NFDI4Health users, and is its official or external status clearly identified?
+2. **Subject review:** Are the functions, service status, access conditions, biomedical examples and references accurate?
+3. **Editorial review:** Is the wording understandable, accessible, properly attributed and consistent with the [content standards]({{ '/content_standards' | relative_url }})?
+4. **Technical checks:** Do the links, Markdown formatting and page metadata work in the website preview?
+5. **Publication:** After relevant reviews and approval, an authorised maintainer merges and checks the public page.
+
+These steps describe a **proposed operating model**, subject to confirmation by the NFDI4Health coordination team; they should not be interpreted as a formally approved consortium policy. See [editorial roles and review]({{ '/editorial_workflow' | relative_url }}).
+
+Service information needs updating as services evolve. Content stewards are encouraged to report changed access requirements, URLs, features or service status, and to respond to correction requests. No fixed review interval is imposed by this page.
+
+## Submission checklist
+
+- [ ] I checked for an existing service page or resource reference.
+- [ ] I clearly identified the contribution as an NFDI4Health service, an update, or an **external** resource.
+- [ ] I verified the official URL, current status, scope and available features.
+- [ ] I identified a suitable subject expert or proposed content steward for factual checks.
+- [ ] I explained the intended audience, practical biomedical RDM use and relevant FAIR or life-cycle context.
+- [ ] I included authoritative sources and required attribution or licence information.
+- [ ] I excluded confidential material and identifiable health data.
+- [ ] I selected a submission route and provided the existing page URL if proposing an update.
+
+## Related guidance
+
+- [Start contributing]({{ '/how_to_contribute' | relative_url }})
+- [Submit Word or Markdown]({{ '/submit_to_coordination' | relative_url }})
+- [Contribute using GitHub]({{ '/github_way' | relative_url }})
+- [Content standards]({{ '/content_standards' | relative_url }})
+- [Copyright and attribution]({{ '/copyright' | relative_url }})
+
+## Source and attribution
+
+This page replaces the inherited RDMkit **“Add new tool or resource”** instructions with an NFDI4Health-specific contribution process. The original RDMkit guidance is available at [RDMkit – Add new tool or resource](https://rdmkit.elixir-europe.org/tool_resource_update) and is credited to its original contributors under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The workflow described above is adapted for the NFDI4Health Knowledge Base; it does **not** imply that RDMkit registry automation is implemented for NFDI4Health.

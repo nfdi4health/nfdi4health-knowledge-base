@@ -19,10 +19,8 @@ columns:
     children:
       - url_text: Contributing
         url: /how_to_contribute
-      - url_text: Module catalogue
+      - url_text: Training Modules and Resources
         url: /modules
-      - url_text: Training resources
-        url: /all_training_resources
 
   - type: links
     title: Legal

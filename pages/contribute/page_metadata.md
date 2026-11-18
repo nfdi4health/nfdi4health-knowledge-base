@@ -1,120 +1,198 @@
 ---
 title: Page metadata
+description: Practical YAML front matter guidance for contributors to the NFDI4Health Knowledge Base.
+permalink: /page_metadata
+sidebar: contribute
+search_exclude: false
+contributors: [Atinkut A. Zeleke]
 ---
 
+Page metadata tells the NFDI4Health Knowledge Base how to display, identify and connect a page. It is written as **YAML front matter** at the very beginning of a Markdown file. The Knowledge Base uses Jekyll and the ELIXIR Toolkit Theme to turn those files into web pages.
 
-In order to render the website, each markdown file contains a specific frontmatter/metadata section. This section is located at the top of the markdown file, is delimited by two times `---` and contains all key value pairs. This can be seen as settings on the page level to enable/disable certain page functions, to deliver extra information which can be displayed in a structured way. An example of how this can look:
+This guide describes the metadata used in the **current NFDI4Health Knowledge Base prototype** and the recommended approach for new contributions. Some existing pages retain metadata inherited from RDMkit; those fields are identified separately below because they are not automatically part of the proposed NFDI4Health authoring standard.
+
+**Page metadata is not biomedical study metadata.** The fields described here configure Knowledge Base web pages. They do not replace NFDI4Health study descriptions, research data documentation or domain-specific metadata standards.
+
+## What is YAML front matter?
+
+Front matter appears at the top of a Markdown file, between two lines containing three hyphens (`---`). Each field has a name and value.
+
+For example:
 
 ```yaml
 ---
-title: Title of the page
+title: Page metadata
+description: Practical YAML front matter guidance for NFDI4Health contributors.
+permalink: /page_metadata
+sidebar: contribute
+contributors: [Atinkut A. Zeleke]
 ---
 ```
 
-## Possible metadata attributes of a page
+The website theme uses the `title` field to display the main page heading. **Do not repeat this title as a Markdown `#` heading in the body**, as doing so can create duplicate titles.
 
+When editing an existing page, retain its front matter unless a change has been agreed and its effects on navigation, links and rendering have been checked.
 
-* `title`: Specify here the title of the page. This will be the H1 title (replacing the top-level title using the # in markdown )
+## Metadata fields used in the Knowledge Base
 
-* `description`: Short sentence about the page starting with a lowercase. This sentence is visualised when pages are automatically listed using a tag.
+The following fields appear in the current repository or are supported by its Jekyll configuration. They do not all need to be present on every page.
 
-* `contributors`: list here all the contributors who helped in establishing the page. This will be the full name of the person. Make sure that the person's name that is listed can be found in the CONTRIBUTORS.yaml file in the _data directory if you want to link the GitHub ID and other contact information.
+| Field | Purpose | Guidance |
+| --- | --- | --- |
+| `title` | Main page title shown by the theme. | Required for published content; use a clear, specific title. |
+| `description` | Short description of a page. | Recommended for newly authored NFDI4Health guidance. Use one informative sentence. |
+| `summary` | Brief summary used by some existing service pages. | Preserve where already used; do not change to `description` without checking the page and any listings that use it. |
+| `permalink` | Public URL path of the page. | Recommended for stable pages; begin with `/` and avoid unnecessary URL changes. |
+| `sidebar` | Sidebar navigation group. | Use `contribute` for contributor guidance and `data_management` where appropriate for the main Knowledge Base. |
+| `contributors` | People credited for creating or adapting a page. | Use registered names from `_data/CONTRIBUTORS.yaml`. |
+| `search_exclude` | Controls inclusion in the **site's own search**. | Set `false` for normal public guidance and `true` for pages that should not appear in site search. |
+| `toc` | Controls the on-page table of contents when supported by the theme. | Use `false` only when the contents list is inappropriate; otherwise rely on the page defaults. |
+| `redirect_from` | Additional old URL paths that redirect to the page. | Use for deliberate URL migrations, after technical review. |
+| `sitemap` | Controls sitemap inclusion where the relevant plugin supports it. | Usually leave unchanged; do not confuse it with internal site search. |
+| `no_robots` | Controls search-engine indexing where supported by the theme. | The prototype currently sets `no_robots: true` in `_config.yml`; changing indexing policy requires project approval. |
 
-* `coordinators`: List here all the coordinators of the page. Use the full name of the person. Make sure that the person's name that is listed can be found in the *_data/CONTRIBUTORS.yaml* file in the _data directory if you want to link the GitHub ID and other contact information.
+The repository's `_config.yml` also defines default values, including the page layout, a default sidebar and a fallback permalink. Consequently, an omitted field does not always mean that a feature is disabled. Contributors should avoid copying unnecessary configuration into every page.
 
-* `editors`: List here all the editors of the page. Use the full name of the person. Make sure that the person's name that is listed can be found in the *_data/CONTRIBUTORS.yaml* file in the _data directory if you want to link the GitHub ID and other contact information.
+### Contributor names and recognition
 
-* `search_exclude`: By setting this field to true, the page will not end up in the search results of the searchbar. By default, this is false.
+The current contributor registry is `_data/CONTRIBUTORS.yaml`. The spelling of each name in the page's `contributors` list must match a key in that file for the theme to associate the person's profile with the page.
 
-* `sitemap`: Let the page appear in the sitemap.xml. Default: true
+For example:
 
-* `no_robots`: By setting this field to true, the page will not end up in the search results of Google or any other search engine.
+```yaml
+contributors: [Atinkut A. Zeleke]
+```
 
-* `toc`: When set to false, the table of contents at the beginning of the page will not be generated.
+Only list people whose contribution has been established. A contributor credit is **not** the same as publication approval or responsibility for ongoing scientific maintenance.
 
-* `page_id`: Unique identifier of a page. It is usually a shortened version of the page name or title, with lowercase letters and spaces, or an acronym, with uppercase and lowercase letters. It is used to list Related pages.
+The separate `_data/nfdi4health_data_stewards.yml` file supports the Knowledge Base's data steward information; it is **not interchangeable** with the contributor registry.
 
-* `datatable`: Use this attribute to activate the pagination + sorting + searching in tables
+For review responsibilities, see the [editorial review guidance]({{ '/editorial_workflow' | relative_url }}).
 
-* `affiliations`: List here all affiliations related to the page. Make sure that the person's name that is listed can be found in the _data/affiliations.yaml file. These affiliations will get displayed at the bottom of the page and in the section navigation tile of the page.
+## Metadata examples from current NFDI4Health content
 
-### Related pages
+The examples below reflect metadata patterns used in the present prototype. They are guides to page configuration, not replacements for the content templates or review requirements.
 
-* `related_pages`: List here the `page_id` of {{site.title}} pages that you want to display as Related pages, grouped by section.
+### Contributor guidance page
 
-  If you want pages from the specific section (Your tasks, Your domain, Tool assembly) to be shown here as Related pages, list their `page_id`. If you want to list multiple related pages, make sure to put them in a list like this: [page_id1, page_id2]. The specific sections allowed on each page are specified in each page template. Please, do not add extra sections in the metadata of the page.
+The contributor section uses the `contribute` sidebar and a stable permalink:
 
-  ```yml
-  related_pages: 
-    - Your_tasks: [page_id1, page_id2]
-    - Your_domain: [page_id1, page_id2]
-    - Tool_assembly: [page_id1, page_id2]
-  ``` 
+```yaml
+---
+title: Page metadata
+description: Practical YAML front matter guidance for NFDI4Health contributors.
+permalink: /page_metadata
+sidebar: contribute
+search_exclude: false
+contributors: [Atinkut A. Zeleke]
+---
+```
 
+### Biomedical research data life-cycle overview
 
-### More information
+The main lifecycle overview uses the `data_management` sidebar and identifies its contributor. The example below shows the relevant fields; the existing page also has redirects that must be preserved when editing it.
 
+```yaml
+---
+title: Research Data Life Cycle
+description: Guidance through the biomedical research data life cycle and its NFDI4Health connections.
+permalink: /data_life_cycle
+sidebar: data_management
+search_exclude: false
+contributors: [Atinkut A. Zeleke]
+---
+```
 
-* `training`: List here training material relevant to the page.
+For lifecycle stage pages already carrying `page_id` or `related_pages` fields, keep those existing fields until the corresponding links and templates have been reviewed. See the [Research Data Life Cycle]({{ '/data_life_cycle' | relative_url }}) overview.
 
-  For referencing training from a local or national organisation, please use this format: 
-  
-  Templates: 
+### NFDI4Health service page
 
-  * [Provider] [Training Material/Search Query] in TeSS
-  * [Provider] on GitHub or [Organisation] - [Repository] on GitHub
-  * [Provider] YouTube [Channel/Video]
-  * [Provider] [Training Material/Community] in Zenodo
+Existing service descriptions, such as Health Study Hub, use `summary` and an explicit service URL. Some also retain inherited theme fields such as `type: Tool_assembly`.
 
-  For referencing training on a specific topic, please use this format:
-    
-  Templates: 
+```yaml
+---
+title: Health Study Hub
+summary: Discover, publish, and reuse clinical, epidemiological, and public health study metadata in a FAIR-aligned environment.
+permalink: /services/health-study-hub
+---
+```
 
-  * [Topic] [Training material/Search query] in TeSS
-  * [Topic] on GitHub or [Topic] – [Repository] on GitHub
-  * [Topic] YouTube [Channel/Video]
-  * [Topic] [Training material/Community] in Zenodo
+This excerpt demonstrates **currently used fields**, not an instruction to remove other fields from the existing page. Service-specific information—including verified URLs, access arrangements, FAIR relevance, lifecycle connections, limitations, references and a responsible content steward—belongs in the **page body and approved service template**, not in arbitrary new YAML keys.
 
-  Examples: 
-  
-   ```yml
-    training:
-      - name: Galaxy Training material in TeSS 
-        url: https://tess.elixir-europe.org/materials?tools=Galaxy
-      - name: Crash Course in Data Management Training material on Zenodo
-        url: https://doi.org/10.5281/zenodo.14843075
-   ```
+See the [NFDI4Health Services]({{ '/services' | relative_url }}) overview.
 
-* `faircookbook`: Here, all relevant FAIR Cookbook recipes are listed. This is automatically updated based on the [`faircookbook_rdmkit_mapping.yml`](https://github.com/elixir-europe/faircookbook-rdmkit/blob/main/faircookbook_rdmkit_mapping.yml) mapping file. If you want to make a new link, please make a pull request against this file. Every week, the changes to this mapping file are used to update the frontmatter of the corresponding markdown files.
+### Training module catalogue
 
-* `dsw`: Here, all relevant Data Stewardship Wizard questions in the Common DSW Knowledge Model are listed. This is automatically updated and cannot be altered by humans. If you want to add a link, you have to add the link towards the RDMkit page in the knowledge model on DSW.
+The current module catalogue uses:
 
-* `fairsharing`: This attribute lists the FAIRsharing collection that is built based on the standards and databases that are listed on that page. This is automatically updated and cannot be altered by humans. If you want to add a resource to the collection, you have to add the resource to the page and link to the FAIRsharing identifier from the tool_and_resource_list.yml.
+```yaml
+---
+title: Training Module Catalogue
+description: NFDI4Health self-paced learning modules, consortium training materials and selected external training resources.
+permalink: /modules
+sidebar: data_management
+toc: true
+search_exclude: false
+---
+```
 
+**A catalogue entry is not a completed self-paced module.** Individual modules must follow the agreed NFDI4Health Module Authoring Template V001, with its sections 0–15 and the necessary instructional review. Do not invent module-specific YAML keys as a substitute for those content sections.
 
-### Tools and resources
+See the [Module Catalogue]({{ '/modules' | relative_url }}) and [contribution standards]({{ '/content_standards' | relative_url }}).
 
-The main tools are described in the main tools and resources table. How to add a tool or resource can be read [here](tool_resource_update). Using the page metadata attributes to describe tools is only used in national resource pages. We support two types: 
+## URLs and internal links
 
+The `permalink` controls the page's public address. Changing it can break existing links, QR codes and bookmarks. Preserve established URLs whenever possible.
 
-* `ref_to_main_resources`: Refer to entries of the "main_tool_and_resource_table" if institutions, organisations, and projects from the country contribute to the development of international tools and resources. List the name of the tool you refer to in the main tools table.
+To link between Knowledge Base pages, use the Jekyll `relative_url` filter so links work in both the Netlify branch preview and the GitHub Pages publication.
 
-  ```yml
-  ref_to_main_resources: 
-    -  Resource name
-  ```
-* `national_resources`: List here tools and resources mainly relevant for the specific country
-  
-  ```yml
-  national_resources: 
-    - name: Resource name
-      description: A general description about the resource.
-      how_to_access: explanation on how you can access this resource
-      instance_of: github
-      related_pages:
-        example_pages: [gp3, gp1, gp2]
-      registry:
-        biotools: bioconda
-        tess: Bioconda
-      url:
-  ```
+{% raw %}
+```liquid
+[Research Data Life Cycle]({{ '/data_life_cycle' | relative_url }})
+```
+{% endraw %}
+
+Do not place the GitHub Pages base path directly into each internal Markdown link. If a published permalink must change, discuss a redirect and verify both the previous and new URLs.
+
+## Updating existing Knowledge Base pages
+
+Some existing Knowledge Base pages contain technical metadata inherited from earlier development stages.
+
+When updating an existing page:
+
+- Preserve metadata fields that support the current page layout, navigation and internal links.
+- Do not remove unfamiliar metadata fields without consulting the Knowledge Base coordination team.
+- Use the current NFDI4Health metadata conventions when creating new pages.
+- Avoid copying outdated metadata fields into new content.
+- Check that the updated page renders correctly in the preview before publication.
+
+The Knowledge Base metadata structure will continue to be standardised as development progresses.
+## YAML editing and validation checklist
+
+Before submitting a Markdown page or pull request:
+
+1. **Check the front matter.** Confirm that the opening and closing `---` lines exist and that YAML uses consistent indentation.
+2. **Check the page title.** Keep one `title` field and do not add another Markdown `#` heading in the body.
+3. **Preserve URLs.** Confirm that `permalink` and any `redirect_from` entries are intentional and do not conflict with another page.
+4. **Check navigation.** Use the correct sidebar and verify the page appears in the expected section.
+5. **Check attribution.** Use registered contributor names; retain required credit and licence details for adapted material.
+6. **Check links and content.** Use `relative_url` for internal links; remove confidential or identifiable health information.
+7. **Check legacy dependencies.** Do not remove RDMkit fields that may still support an inherited page without reviewing their effect.
+8. **Preview the result.** Confirm the page builds and renders on the branch preview, including the main title, table of contents, links and contributor display.
+9. **Complete review.** Obtain applicable subject and editorial checks before an authorised maintainer publishes the page.
+
+For writing and Markdown syntax, see the [Markdown cheat sheet]({{ '/markdown_cheat_sheet' | relative_url }}) and [NFDI4Health contribution standards]({{ '/content_standards' | relative_url }}).
+
+## Related contribution guidance
+
+- [Start contributing]({{ '/how_to_contribute' | relative_url }})
+- [Markdown cheat sheet]({{ '/markdown_cheat_sheet' | relative_url }})
+- [Content standards]({{ '/content_standards' | relative_url }})
+- [Copyright and attribution]({{ '/copyright' | relative_url }})
+- [Editorial review and volunteer team]({{ '/editorial_workflow' | relative_url }})
+
+## Source and attribution
+
+This guide is adapted from the [RDMkit Page metadata guide](https://rdmkit.elixir-europe.org/page_metadata), distributed as part of RDMkit documentation under the [Creative Commons Attribution 4.0 International licence](https://creativecommons.org/licenses/by/4.0/).
+
+It has been revised for the NFDI4Health Knowledge Base to distinguish current page configuration from inherited RDMkit conventions, document the repository's actual fields and align examples with biomedical research data management and the emerging NFDI4Health contribution workflow. The acknowledgement recognises the source; it does not imply that RDMkit maintains NFDI4Health guidance.

@@ -34,6 +34,13 @@ exclude:
   - vendor
   - Gemfile*
   - LICENSE
+    # Temporarily excluded inherited RDMkit technical pages.
+  # Preserve source files for review and adaptation.
+
+  - pages/contribute/editorial_board_guide.md
+  - pages/contribute/editors_checklist.md
+  - pages/contribute/preview_changes.md
+  - pages/contribute/working_with_git.md
 
 defaults:
   -

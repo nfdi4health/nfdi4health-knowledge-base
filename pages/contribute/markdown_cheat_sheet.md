@@ -301,43 +301,60 @@ For additional guidance, consult the [NFDI4Health contribution standards]({{ '/c
 Use GitHub emoticons! This [github page about emoticons](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md) has a cheat sheet for all the emoticons.
 :+1: is made with `:+1:`
 
-## Code snippets
+## Code blocks and YAML examples
 
-For syntax highlighting, use fenced code blocks optionally followed by the language syntax you want:
+Code blocks are used to display Markdown syntax, YAML metadata and other technical examples without interpreting them as ordinary page content.
 
-<pre>
-```java
-import java.util.Scanner;
+A code block begins and ends with three backticks. Adding a language identifier, such as `yaml` or `md`, enables syntax highlighting.
 
-public class ScannerAndKeyboard
-{
+### Example: YAML front matter
 
-	public static void main(String[] args)
-	{	Scanner s = new Scanner(System.in);
-		System.out.print( "Enter your name: "  );
-		String name = s.nextLine();
-		System.out.println( "Hello " + name + "!" );
-	}
-}
+Every Knowledge Base page uses YAML front matter to define important page information.
+
+For example:
+
+```yaml
+---
+title: Contribute using GitHub
+permalink: /github_way
+sidebar: contribute
+---
 ```
-</pre>
 
-This looks as follows:
+The metadata defines:
 
-```java
-import java.util.Scanner;
+- `title`: The title displayed at the top of the page.
+- `permalink`: The permanent URL assigned to the page.
+- `sidebar`: The navigation menu associated with the page.
 
-public class ScannerAndKeyboard
-{
+**Important:** The Knowledge Base theme automatically displays the title defined in the YAML metadata. Do not repeat it using a top-level Markdown heading (`#`) in the page body.
 
-	public static void main(String[] args)
-	{	Scanner s = new Scanner(System.in);
-		System.out.print( "Enter your name: "  );
-		String name = s.nextLine();
-		System.out.println( "Hello " + name + "!" );
-	}
-}
+When updating an existing page, preserve its working metadata unless changes have been agreed with the coordination team.
+
+### Example: Markdown content structure
+
+The following example demonstrates how to organise guidance within a Knowledge Base page:
+
+```md
+## Recommended actions
+
+1. Identify the relevant research data management requirements.
+2. Document the applicable procedures and responsibilities.
+3. Check the relevant NFDI4Health services and guidance.
+4. Record supporting references and sources.
+
+## Further information
+
+Provide links to relevant services, standards and learning materials.
 ```
+
+### Recommendations
+
+- Use code blocks only when they help readers understand a technical procedure.
+- Specify the appropriate language for syntax highlighting.
+- Keep examples concise and clearly explained.
+- Never include passwords, API tokens, confidential information or identifiable personal health data.
+- Ensure that technical examples are checked before publication.
 
 
 ## List and sub-list 

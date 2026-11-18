@@ -387,39 +387,66 @@ Provide links to relevant services, standards and learning materials.
 - Ensure that technical examples are checked before publication.
 
 
-## List and sub-list 
+## Lists and sublists
 
-* List line 1
-* List line 2
-    * Sublist line 1
+Lists help present research data management guidance in a clear, structured and actionable format.
 
-Is made with:
+Use bullet points for related information without a required sequence. Use numbered lists when actions should be performed in a particular order.
 
-```md
-* List line 1
-* List line 2
-    * Sublist line 1
-		* Subsublist line 1
-```
+### Bulleted lists
 
-Numbered lists look like this:
+For example, a Knowledge Base page might describe important considerations when preparing biomedical research data for sharing.
 
-1. Number one
-2. Number two
-3. Number three
-   1. Sub number one
-   2. Sub number two
-
-and are made with:
+Markdown syntax:
 
 ```md
-1. Number one
-1. Number two
-1. Number three
-   1. Sub number one
-   1. Sub number two
-
+- Data documentation
+- Metadata quality
+- Access conditions
+  - Publicly accessible metadata
+  - Controlled access to sensitive data
+- Licensing and reuse conditions
 ```
+
+**Result:**
+
+- Data documentation
+- Metadata quality
+- Access conditions
+  - Publicly accessible metadata
+  - Controlled access to sensitive data
+- Licensing and reuse conditions
+
+### Numbered lists
+
+Numbered lists are useful for explaining workflows and recommended procedures.
+
+Markdown syntax:
+
+```md
+1. Identify the research data management requirements.
+2. Determine the relevant institutional policies and safeguards.
+3. Identify applicable NFDI4Health services.
+4. Document the workflow and responsibilities.
+5. Verify the information and supporting references.
+```
+
+**Result:**
+
+1. Identify the research data management requirements.
+2. Determine the relevant institutional policies and safeguards.
+3. Identify applicable NFDI4Health services.
+4. Document the workflow and responsibilities.
+5. Verify the information and supporting references.
+
+### Recommendations
+
+- Use short, descriptive list items.
+- Maintain consistent grammatical structure.
+- Use numbered lists for sequential instructions.
+- Avoid unnecessary levels of nesting.
+- Explain specialist terminology when appropriate.
+- Ensure that lists remain readable on mobile devices.
 
 ## Block quotes
 

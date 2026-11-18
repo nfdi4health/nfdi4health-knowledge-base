@@ -232,29 +232,24 @@ For additional requirements, consult the [NFDI4Health contribution standards]({{
 
 ## Icons
 
-Go to the [Font Awesome library](https://fontawesome.com/) to see the available icons.
+The NFDI4Health Knowledge Base can use Font Awesome icons to help readers identify different types of content.
 
-The Font Awesome icons allow you to adjust their size by simply adding `fa-2x`, `fa-3x` and so forth as a class to the icon to adjust their size to two times or three times the original size. As vector icons, they scale crisply at any size.
+Icons should support the written information, not replace descriptive text. See the [Font Awesome icon library](https://fontawesome.com/icons) for available icons.
 
-Here's an example of how to scale up a camera icon:
+### Example: Research data services
 
 ```html
-<i class="fa-solid fa-camera-retro"></i> normal size (1x)
-<i class="fa-solid fa-camera-retro fa-lg"></i> fa-lg
-<i class="fa-solid fa-camera-retro fa-2x"></i> fa-2x
-<i class="fa-solid fa-camera-retro fa-3x"></i> fa-3x
-<i class="fa-solid fa-camera-retro fa-4x"></i> fa-4x
-<i class="fa-solid fa-camera-retro fa-5x"></i> fa-5x
+<i class="fa-solid fa-database" aria-hidden="true"></i> Research data services
+<i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Self-paced learning modules
+<i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Research data life cycle
 ```
 
-Here's what they render to:
+### Accessibility considerations
 
-<i class="fa-solid fa-camera-retro"></i> 1x
-<i class="fa-solid fa-camera-retro fa-lg"></i> fa-lg
-<i class="fa-solid fa-camera-retro fa-2x"></i> fa-2x
-<i class="fa-solid fa-camera-retro fa-3x"></i> fa-3x
-<i class="fa-solid fa-camera-retro fa-4x"></i> fa-4x
-<i class="fa-solid fa-camera-retro fa-5x"></i> fa-5x
+- Always provide a meaningful text label alongside an icon.
+- Do not communicate essential information through icons alone.
+- Use `aria-hidden="true"` for decorative icons when the accompanying text already conveys their meaning.
+- Check that icons display correctly in the Netlify preview.
 
 ## Links
 

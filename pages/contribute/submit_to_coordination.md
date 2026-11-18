@@ -4,8 +4,6 @@ permalink: /submit_to_coordination
 sidebar: contribute
 ---
 
-# Submit a Word or Markdown contribution
-
 This route is for NFDI4Health data stewards and service owners who prefer not to edit GitHub directly. **The coordinator handles technical integration; the named content steward retains responsibility for checking specialist information.**
 
 ## Step 1 — Select a template

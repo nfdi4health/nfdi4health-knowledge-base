@@ -1,8 +1,10 @@
 ---
 title: Markdown cheat sheet
-summary: This is a cheat sheet to showcase what is possible within the markdown pages.
-contributors: [Bert Droesbeke]
-search_exclude: true
+description: Practical Markdown guidance for contributors to the NFDI4Health Knowledge Base.
+permalink: /markdown_cheat_sheet
+sidebar: contribute
+search_exclude: false
+contributors: [Atinkut A. Zeleke]
 ---
 
 The NFDI4Health Knowledge Base uses Markdown to develop and maintain service descriptions, self-paced learning modules, and biomedical research data life-cycle guidance.
@@ -548,3 +550,13 @@ Second line of text.
 - Avoid excessive blank spaces and unnecessary HTML formatting.
 - Keep text readable on desktop and mobile devices.
 - Allow the Knowledge Base theme to control spacing and layout wherever possible.
+
+  ## Source and attribution
+
+This guide is adapted from the [RDMkit Markdown cheat sheet](https://rdmkit.elixir-europe.org/markdown_cheat_sheet), originally credited to Bert Droesbeke.
+
+The original RDMkit documentation is distributed under the [Creative Commons Attribution 4.0 International licence](https://creativecommons.org/licenses/by/4.0/).
+
+The content has been revised for the NFDI4Health Knowledge Base, including examples relating to biomedical research data management, NFDI4Health services, self-paced learning modules, accessibility and data privacy.
+
+This acknowledgement recognises the original source and does not imply that RDMkit is responsible for maintaining the NFDI4Health contribution guidance.

@@ -393,24 +393,36 @@ and are made with:
 
 ## Block quotes
 
-You can add a blockquote using:
+Block quotes are used to distinguish quoted text from the surrounding content.
+
+In the NFDI4Health Knowledge Base, quotations may be useful when referring to official guidance, policies, standards or documented recommendations.
+
+Use the `>` symbol at the beginning of a line to create a block quote.
+
+### Example: Quoting NFDI4Health contribution guidance
+
+The following Markdown syntax creates a block quote:
 
 ```md
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
->
-> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-
+> Use synthetic, fully fictional examples unless explicit approval and legal clearance exist.
 ```
 
-Giving:
+**Result:**
 
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+> Use synthetic, fully fictional examples unless explicit approval and legal clearance exist.
 
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
->
-> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Source: [NFDI4Health contribution standards]({{ '/content_standards' | relative_url }}).
+
+### Recommendations for quotations
+
+- Reproduce quotations accurately without changing their meaning.
+- Clearly identify the original source.
+- Provide a citation or link to the referenced document.
+- Use quotations only when necessary; otherwise, summarise the information in your own words.
+- Respect copyright and licensing requirements.
+- Do not reproduce confidential documents or restricted information.
+
+For longer passages, consider summarising the relevant guidance and linking to the original source instead of reproducing extensive text.
 
 
 ## A collapsible piece of text

@@ -71,24 +71,38 @@ Make sure there are no spaces between the asterisks and the text you want to put
 
 ## Tables
 
-You can use Multimarkdown syntax for tables. The following shows a sample:
+Markdown tables help organise information clearly and consistently across NFDI4Health Knowledge Base pages.
+
+For example, contributors can use tables to summarise the information required for service descriptions, self-paced learning modules and research data life-cycle guidance.
+
+### Example: NFDI4Health content types
+
+The following Markdown code creates a simple table:
 
 ```md
-| Priority apples | Second priority | Third priority |
-|-------|--------|---------|
-| ambrosia | gala | red delicious |
-| pink lady | jazz | macintosh |
-| honeycrisp | granny smith | fuji |
+| Content type | Information to include |
+| --- | --- |
+| Service description | Purpose, target users, access conditions, FAIR relevance and references |
+| Self-paced learning module | Learning objectives, core concepts, practical workflow and self-check questions |
+| Research data life-cycle guidance | Recommended actions, biomedical examples, safeguards, related services and references |
 ```
 
 **Result:**
 
-| Priority apples | Second priority | Third priority |
-|-------|--------|---------|
-| ambrosia | gala | red delicious |
-| pink lady | jazz | macintosh |
-| honeycrisp | granny smith | fuji |
+| Content type | Information to include |
+| --- | --- |
+| Service description | Purpose, target users, access conditions, FAIR relevance and references |
+| Self-paced learning module | Learning objectives, core concepts, practical workflow and self-check questions |
+| Research data life-cycle guidance | Recommended actions, biomedical examples, safeguards, related services and references |
 
+### Recommendations for tables
+
+- Use clear and informative column headings.
+- Keep descriptions concise and understandable.
+- Avoid excessively wide tables.
+- Ensure that tables remain readable on mobile devices.
+- Provide references for scientific or technical claims.
+- Do not use tables solely for visual page layout.
 ## Message boxes
 
 Change the content attribute in the code snippet to change the text in the message box
